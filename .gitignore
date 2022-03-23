@@ -11,6 +11,7 @@
 # Tutorial Files
 /docs/tutorial-basics
 /docs/tutorial-extras
+/docs/intro.md
 
 # Misc
 .DS_Store

@@ -8,6 +8,10 @@
 .docusaurus
 .cache-loader
 
+# Tutorial Files
+/docs/tutorial-basics
+/docs/tutorial-extras
+
 # Misc
 .DS_Store
 .env.local

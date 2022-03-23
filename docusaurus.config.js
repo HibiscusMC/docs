@@ -10,7 +10,7 @@ const config = {
   tagline: 'We\'re a team of creators helping build high-quality plugins designed for the next generation of Minecraft Servers.',
   url: 'https://docs.hibiscusmc.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'hibiscusmc', // Usually your GitHub org/user name.

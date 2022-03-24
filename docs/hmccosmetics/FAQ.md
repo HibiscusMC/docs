@@ -42,4 +42,5 @@ Now, simply add this to your item configuration:
       equip:
         any:
           open-menu: dye-menu # Opens the dye menu when the cosmetic is applied.
-```, and you're done!
+```
+, and you're done!

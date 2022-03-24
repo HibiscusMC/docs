@@ -4,10 +4,6 @@ sidebar_position: 6
 
 # FAQ
 
-You can customize the dye menu in the `dye-menu.yml` file.
-
-> Please note that this option only works with items that can be dyed. Commonly used items are `LEATHER_HORSE_ARMOR` and `POTION`.
-
 ## Can I change the lore when a cosmetic is applied to the player?
 
 **Yes!** To do this, you can use the `applied-lore` modifier.

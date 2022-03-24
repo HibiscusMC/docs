@@ -106,3 +106,11 @@ Open the dye menu only when equipping the cosmetic:
         any:
           open-menu: dye-menu
 ```
+
+Send a command when the player removes a cosmetic:
+```yaml
+    action:
+      remove:
+        any:
+          send-command: "console:give %player% diamond"
+```

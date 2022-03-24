@@ -1,18 +1,74 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Cosmetic Types
 
-HMCCosmetics has two types of cosmetics: `HAT`, and `BACKPACK`.
+HMCCosmetics has four types of cosmetics: `HAT`, `BACKPACK`, `OFF_HAND`, and `BALLOON`.
 
 ## `HAT` Cosmetics
 
 `HAT` Cosmetics work by placing a "fake" cosmetic inside of the player's head slot. This means that your players can still place an actual armor piece (like a diamond helmet) inside of their head slot, but the cosmetic will show up instead. 
 
-## `BACKPACK` Cosmetics
+```yaml
+    material: PAPER
+    name: "<rainbow>Colorful Hat</rainbow>"
+    lore:
+      - ""
+      - "<gray>Enabled: <#6D9DC5>%enabled%"
+      - "<gray>Allowed: <#6D9DC5>%allowed%"
+    locked-lore:
+      - "<red>You do not own this item!"
+    applied-lore:
+        - "<gray>My awesome <rainbow>Colorful Hat</rainbow>!"
+    amount: 1
+    model-data: 2
+    type: HAT
+    permission: "cosmetics.colorful_hat"
+    id: colorful_hat
+```
 
+## `BACKPACK` Cosmetics
 `BACKPACK` Cosmetics work by attaching an armor stand to the player that automatically rotates with them.
+
+```yaml
+    material: PAPER
+    name: "<blue>Backpack"
+    lore:
+      - ""
+      - "<gray>Enabled: <#6D9DC5>%enabled%"
+      - "<gray>Allowed: <#6D9DC5>%allowed%"
+    locked-lore:
+      - "<red>You do not own this item!"
+    applied-lore:
+        - "<gray>My HMCCosmetics backpack!"
+    amount: 1
+    model-data: 4
+    type: BACKPACK
+    permission: ""
+    id: backpack
+```
+
+## `OFF_HAND` Cosmetics
+`OFF_HAND` Cosmetics are items that go in the player's offhand slot. When they switch to a different item (from the survival inventory or with the F key), it is automatically unapplied temporarily. When they click F again, the cosmetic comes back!
+
+```yaml
+    material: PAPER
+    name: "<blue>Lantern Cosmetic"
+    lore:
+      - ""
+      - "<gray>Enabled: <#6D9DC5>%enabled%"
+      - "<gray>Allowed: <#6D9DC5>%allowed%"
+    locked-lore:
+      - "<red>You do not own this item!"
+    applied-lore:
+        - "<gray>My lantern!"
+    amount: 1
+    model-data: 5
+    type: OFF_HAND
+    permission: ""
+    id: lantern_cosmetic
+```
 
 ## `BALLOON` Cosmetics
 

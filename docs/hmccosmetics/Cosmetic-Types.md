@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Cosmetic Types
 
-HMCCosmetics has four types of cosmetics: `HAT`, `BACKPACK`, `OFF_HAND`, and `BALLOON`.
+HMCCosmetics has **seven** types of cosmetics: `HAT`, ``BACKPACK`, `CHEST_PLATE`, `PANTS`, `BOOTS`, `OFF_HAND`, and `BALLOON`
 
 ## `HAT` Cosmetics
 
@@ -47,6 +47,53 @@ HMCCosmetics has four types of cosmetics: `HAT`, `BACKPACK`, `OFF_HAND`, and `BA
     type: BACKPACK
     permission: ""
     id: backpack
+```
+
+## `CHEST_PLATE`, `PANTS`, and `BOOTS` Cosmetics
+
+These cosmetics function the same as a hat, so you can use them for cosmetic armor sets.
+
+```yaml
+    material: DIAMOND_CHESTPLATE
+    name: "<blue>Cosmetic Chestplate"
+    lore:
+      - ""
+      - "<gray>Enabled: <#6D9DC5>%enabled%"
+      - "<gray>Allowed: <#6D9DC5>%allowed%"
+    locked-lore:
+      - "<red>You do not own this item!"
+    amount: 1
+    type: CHEST_PLATE
+    permission: ""
+    id: chestplate
+```
+```yaml
+    material: DIAMOND_LEGGINGS
+    name: "<blue>Cosmetic Leggings"
+    lore:
+      - ""
+      - "<gray>Enabled: <#6D9DC5>%enabled%"
+      - "<gray>Allowed: <#6D9DC5>%allowed%"
+    locked-lore:
+      - "<red>You do not own this item!"
+    amount: 1
+    type: PANTS
+    permission: ""
+    id: pants
+```
+```yaml
+    material: DIAMOND_BOOTS
+    name: "<blue>Cosmetic Boots"
+    lore:
+      - ""
+      - "<gray>Enabled: <#6D9DC5>%enabled%"
+      - "<gray>Allowed: <#6D9DC5>%allowed%"
+    locked-lore:
+      - "<red>You do not own this item!"
+    amount: 1
+    type: BOOTS
+    permission: ""
+    id: boots
 ```
 
 ## `OFF_HAND` Cosmetics

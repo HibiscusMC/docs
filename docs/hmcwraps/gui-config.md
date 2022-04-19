@@ -6,18 +6,27 @@ sidebar_position: 7
 
 HMCWraps has many options for GUI configuration. 
 
+## Inventory Type
+
+- `SCROLLING` - *Scrolls down one line at a time.*
+- `PAGINATED` - *Scrolls by inventory "page".*
+
 ## GUI Actions
 Similar to HMCCosmetics, Wraps allows for actions.
 The current options are as follows:
 
 - `SCROLL_FORTH` - *Scroll to the next row (not page)*
 - `SCROLL_BACK` - *Scroll to the previous row (not page)*
+- `NEXT_PAGE` - *Open next page*
+- `PREVIOUS_PAGE` - *Open previous page*
 - `UNWRAP` - *Unwrap item in hand*
 - `CLOSE` - *Close GUI*
 
 ```yaml
 # The inventory (/wraps)
 inventory:
+  # Type of GUI, SCROLLING or PAGINATED
+  category: SCROLLING
   # The title
   title: <red><bold>Wraps
   # How many rows the inventory should have

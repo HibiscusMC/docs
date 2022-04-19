@@ -26,7 +26,7 @@ The current options are as follows:
 # The inventory (/wraps)
 inventory:
   # Type of GUI, SCROLLING or PAGINATED
-  category: SCROLLING
+  type: SCROLLING
   # The title
   title: <red><bold>Wraps
   # How many rows the inventory should have

@@ -47,7 +47,7 @@ inventory:
     47:
       id: 'ARROW'
       name: '<green>Previous'
-      # The action: Either 'SCROLL_BACK', 'SCROLL_FORTH', 'UNWRAP' to unwrap the current item, 'CLOSE' to close the inventory
+      # The action: Either 'SCROLL_BACK', 'SCROLL_FORTH', 'PREVIOUS_PAGE', 'NEXT_PAGE', 'UNWRAP' to unwrap the current item, 'CLOSE' to close the inventory.
       action: 'SCROLL_BACK'
     48:
       id: 'GRAY_STAINED_GLASS_PANE'

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Adding Wraps
 
-Adding a wrap using HMCWraps is very simple. Here, you can see an example of a wrap for `SWORDS` broken down with comments on each configuration key.
+Adding a wrap using HMCWraps is very simple. Here, you can see an example of a wrap for `SWORDS` (see [Collections](https://docs.hibiscusmc.com/docs/hmcwraps/collections)) broken down with comments on each configuration key.
 
 ```yaml
   SWORDS: # This can either be a collection (SWORDS), or an item (DIAMOND_SWORD).
@@ -26,6 +26,11 @@ Adding a wrap using HMCWraps is very simple. Here, you can see an example of a w
         # The flags the item should have in the wraps inventory (nullable)
         flags:
           - 'HIDE_ATTRIBUTES'
+        # Enchantments the item should have within the inventory (not applied to the item). Optional
+        enchantments:
+          - 'DIG_SPEED: 1'
+        # Amount shown in the GUI
+        amount: 1
         # The physical wrap to apply (nullable)
         physical:
           # The Bukkit material (PAPER) or a hook (oraxen:physical_wrap)

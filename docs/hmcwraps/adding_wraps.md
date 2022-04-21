@@ -53,3 +53,5 @@ To create a physical wrap, simply add this to the bottom of your wrap configurat
           lore:
             - '<green>Apply this to an item to wrap it!'
 ```
+
+> Tip! Both of these items can use the "Item Options" shown in [GUI Configuration](https://docs.hibiscusmc.com/docs/hmcwraps/gui-config).

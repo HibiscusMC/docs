@@ -33,6 +33,8 @@ HMCWraps has many options for GUI configuration.
       amount: 1
 ```
 
+> Tip! All of these attributes can be used for physical wraps & wrap items within the inventory.
+
 ## GUI Actions
 Similar to HMCCosmetics, Wraps allows for actions.
 The current options are as follows:

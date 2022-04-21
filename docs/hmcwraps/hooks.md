@@ -17,3 +17,9 @@ id: itemsadder:<namespace>:<item_name>
 # The Bukkit material or hook
 id: oraxen:<item_name>
 ```
+
+## [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
+
+PlaceholderAPI Placeholders can be used in item names & lore.
+
+List of (most) PAPI Placeholders: https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders

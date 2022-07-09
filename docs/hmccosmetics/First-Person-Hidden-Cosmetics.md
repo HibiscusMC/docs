@@ -2,8 +2,6 @@
 sidebar_position: 100
 ---
 
-## COMING SOON! NOT RELEASED YET!
-
 # First-Person Hidden Cosmetics
 
 HMCCosmetics allows you to hide cosmetics in first person by exploiting Minecraft's rendering system. It's quite complicated to explain - so we'll do our best here - but you can always refer to the default resource pack.

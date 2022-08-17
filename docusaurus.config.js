@@ -23,8 +23,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
-          editUrl: 'https://github.com/hibiscusmc/docs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/hibiscusmc/docs/',
         },
         blog: {
           showReadingTime: true,

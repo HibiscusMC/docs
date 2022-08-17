@@ -71,7 +71,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/hmccosmetics',
+                to: 'docs/hmccosmetics/Commands',
               },
             ],
           },

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Commands
@@ -8,7 +8,7 @@ sidebar_position: 1
 
 `/wraps reload` - Reload HMCWraps
 
-`/wraps give wrap <player> <wrap uuid> [amount]` - Give a wrap to the player
+`/wraps give wrapper <player> <wrap uuid> [amount]` - Give a wrap to the player
 
 `/wraps give unwrapper <player> [amount]`
 

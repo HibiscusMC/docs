@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Setup
 
-HMCWraps has no dependencies. The plugin does have optional [Hooks](https://docs.hibiscusmc.com/docs/hmcwraps/hooks), which use other plugins, but you do not need anything else installed to use the plugin.
+HMCWraps has no dependencies. The plugin does have optional [hooks](https://docs.hibiscusmc.com/docs/hmcwraps/hooks), which use other plugins, but you do not need anything else installed to use the plugin.
 
 ## Vanilla Resource Pack
 
@@ -12,14 +12,16 @@ Add the resource pack to your server using server.properties
 
 ## ItemsAdder
 
-Coming soon!
+The plugin has native support for ItemsAdder to replace certain items by the ones ItemsAdder provides.
+The plugin supports putting the key (e.g. `itemsadder:tree:apple`) in any `id` field of any item.
 
 ## Oraxen
 
-Coming soon!
+Just like ItemsAdder, HMCWraps has native support for Oraxen to replace items with Oraxen items.
+The plugin supports putting the key (e.g. `oraxen:apple`) in any `id` field of y item.
 
----
+## Post Installation
 
-After installing, we recommend modifying the message.properties file to your liking using [MiniMessage Formatting](https://docs.adventure.kyori.net/minimessage/format.html).
+After installing, we recommend modifying the `message.properties` file to your liking using [MiniMessage Formatting](https://docs.adventure.kyori.net/minimessage/format.html).
 
 Then, you can read the default configs and start adding your wraps!

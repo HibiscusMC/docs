@@ -9,6 +9,7 @@ sidebar_position: 2
 Adding wraps is an extremely simple task in HMCWraps. You can use all the options from the [ConfigItem](https://docs.hibiscusmc.com/docs/hmcwraps/config/item) except:
 
 - `id` now takes the custom model id or a [hook](https://docs.hibiscusmc.com/docs/hmcwraps/hooks) of the wrap, which also applies when wrapping an item
+- `actions` - Do something when the wrap gets wrapped, unwrapped or previewed. More on that here: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actions)
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:

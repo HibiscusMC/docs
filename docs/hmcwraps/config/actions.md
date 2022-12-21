@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Actions
@@ -62,6 +62,8 @@ actions:
 ```
 
 As mentioned above, you can use actions on wraps and inventory items.
+
+> **Note**: You don't need to add all possible triggers, you can just remove the triggers you don't need.
 
 Example A: `actions on a wrap`
 ```yaml

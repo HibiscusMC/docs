@@ -28,95 +28,47 @@ You can create a button to open the next page with the `[MENU] <menu_name>` acti
 
 ## Action System
 
-# TODO: Revamp this section
-
-
-The action system allows you to define different events for different click types. The current options are `LEFT`, `MIDDLE`, `RIGHT`, and `ANY`.
+The action system allows you to define different events when clicking on menu items.
+For `cosmetic` type menu items, you can use `on-equip` and `on-unequip` instead of `any` which will make the action happen when the cosmetic is equipped/unequipped.
+For `empty` type menu items, currently, only `any` is accepted.
 
 ### Current Actions
 
 ```yaml
-        # Open the specified menu
-        open-menu: <MENU>
+    actions:
+      any:
+        - "[MENU] main_menu"
 ```
 
 ```yaml
-        # Play a sound
-        sound:
-            name: "minecraft:block.chain.break"
-            volume: 1.0
-            pitch: 1.0
-            category: "BLOCKS"
+    actions:
+      any:
+        - "[CLOSE]"
 ```
 
 ```yaml
-        # Remove cosmetics currently applied to the player
-        remove-cosmetics:
-          - BOOTS
-          - CHEST_PLATE
-          - HAT
+    actions:
+      any:
+        - "[PLAYER-COMMAND] say Hi"
 ```
 
 ```yaml
-        # Send a message to the player
-        send-message: "<red>My test message!"
+    actions:
+      any:
+        - "[CONSOLE-COMMAND] say Hi"
 ```
 
 ```yaml
-        #  Send multiple messages to the player
-        send-messages:
-          - "<gray>Message 1"
-          - "<red>Message 2"
-```
-
-```yaml
-        # send a command, format is <sender:command>
-        # senders can be player or console
-        send-command: "player:give %player% diamond"
-```
-
-```yaml
-        # Send multiple commands, format is <sender:command>
-        send-commands:
-          - "player:help"
-          - "console:give %player% gold_ingot"
-```
-
-```yaml
-        # Set items in the specified slots in the inventory
-        # Works with all actions
-        # Sets items in the next inventory if open-menu is specified
-        set-items:
-          12:
-            material: PAPER
-            name: "<red>Backpack"
-            lore:
-              - ""
-              - "<gray>Enabled: <#6D9DC5>%enabled%"
-              - "<gray>Allowed: <#6D9DC5>%allowed%"
-            locked-lore:
-              - "<red>You do not own this item!"
-            amount: 1
-            model-data: 4
-            type: BACKPACK
-            permission: ""
-            id: backpack
+    actions:
+      any:
+        - "[MESSAGE] <#d24c9f>Hello %player_name%!"
 ```
 
 ### Examples
 
-Open the dye menu only when equipping the cosmetic:
+Send a console command when the player removes a cosmetic:
 ```yaml
-    action:
-      equip:
-        any:
-          open-menu: dye-menu
-```
-
-Send a command when the player removes a cosmetic:
-```yaml
-    action:
-      remove:
-        any:
-          send-command: "console:give %player% diamond"
+    actions:
+      on-unequip:
+        - "[CONSOLE-COMMAND] say A player removed a cosmetic"
 ```

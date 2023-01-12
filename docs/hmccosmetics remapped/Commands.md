@@ -8,15 +8,17 @@ sidebar_position: 1
 
 `/cosmetic reload` (hmccosmetics.cmd.reload) - Reloads configuration files
 
-`/cosmetic add <USERNAME> <ID>` - (hmccosmetics.cmd.set) - Add a cosmetic to a player by command
+`/cosmetic apply <ID> <USERNAME>` - (hmccosmetics.cmd.set) - Add a cosmetic to a player by command
 
-`/cosmetic remove <USERNAME> <TYPE>` - (hmccosmetics.cmd.set) - Remove a cosmetic from a player by command
+`/cosmetic unapply <TYPE> <USERNAME>` - (hmccosmetics.cmd.set) - Remove a cosmetic from a player by command
 
 `/cosmetic dye <TYPE> <#HEX>` - (hmccosmetics.cmd.dye) - Dye a cosmetic. HEX Code is optional, without it, it will open the dye menu.
 
-`/cosmetic hide` - Hides the currently used backpack only for the player wearing it. Other players will still be able to see it!
-
-`/cosmetic npc apply <npc_id> <cosmetic_type> <cosmetic_id>` - (hmccosmetics.cmd.set) - Add a cosmetic to a NPC
+`/cosmetic setlocation <location>` - (hmccosmetics.cmd.wardrobe) - Sets wardrobe positions. `<location>` can be `leavelocation`, `viewerlocation`, `wardrobelocation`. 
 
 `/cosmetic wardrobe` - (hmccosmetics.cmd.wardrobe) - Open the wardrobe.
+
+`/cosmetic dataclear <USERNAME>` - (hmccosmetics.cmd.dataclear) - Clears a player data from your database. Only useful if a player is offline.
+
+`/cosmetic menu <MENU> <USERNAME>` - (hmccosmetics.menu) - Opens a cosmetic menu for a player. 
 

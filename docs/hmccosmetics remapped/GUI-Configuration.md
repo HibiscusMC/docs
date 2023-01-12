@@ -26,6 +26,23 @@ You can create a button to open the next page with the `[MENU] <menu_name>` acti
         - "[MENU] main_menu"
 ```
 
+## Slots System
+
+The slot system is similar to other plugins, allowing both single or multiple slots. An example of multiple slots are:
+
+```yaml
+  niftyString:
+    slots:
+      - 7-10 # This will only fill slot 7->10. 
+      - 12 # This will only fill slot 12. 
+    item:
+      material: STRING
+      amount: 1
+      lore:
+        - "<WHITE>"
+        - "<gray>Colorful balloon!"
+```
+
 ## Action System
 
 The action system allows you to define different events when clicking on menu items.

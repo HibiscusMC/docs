@@ -25,14 +25,10 @@ Make sure to use a tintable item (like `POTION`, `LEATHER_HORSE_ARMOR`, `TIPPED_
 
 Now, simply add this to your item configuration:
 ```yaml
-    dyeable: true # Enables dyeable item feature
+    dyeable: true # Enables dyeable item feature. If a cosmetic is applied in a gui, it will open the dye menu. A player can also dye it with /cosemtic dye.
     color: # Sets default color for item
       red: 5
       blue: 100
       green: 230
-    action:
-      equip:
-        any:
-          open-menu: dye-menu # Opens the dye menu when the cosmetic is applied.
 ```
 , and you're done!

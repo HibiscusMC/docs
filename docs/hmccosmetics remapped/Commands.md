@@ -20,5 +20,8 @@ sidebar_position: 1
 
 `/cosmetic dataclear <USERNAME>` - (hmccosmetics.cmd.dataclear) - Clears a player data from your database. Only useful if a player is offline.
 
-`/cosmetic menu <MENU> <USERNAME>` - (hmccosmetics.menu) - Opens a cosmetic menu for a player. 
+`/cosmetic menu <MENU> <USERNAME>` - (hmccosmetics.cmd.menu) - Opens a cosmetic menu for a player. 
 
+`/cosmetic hide <USERNAME>` - (hmccosmetics.cmd.hide) - Hides cosmetics on a player.
+
+`/cosmetic show <USERNAME>` - (hmccosmetics.cmd.show) - Reveals cosmetics on a player.

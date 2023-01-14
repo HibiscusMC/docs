@@ -27,6 +27,19 @@ color: '#ff0000'
 physical: # A physical wrapper (not required)
 ```
 
+### Locked options
+
+If you want to have the plugin display something else when the player does not have permissions for the wrap, you can add the following stuff:
+
+`locked-item` is just a [ConfigItem](https://docs.hibiscusmc.com/docs/hmcwraps/config/item) which will be displayed.
+
+However, if you don't want to change the whole item but just the lore and the display name, you can use the following options:
+
+- `locked-name`
+- `locked-lore`
+
+Both of them can be configured regularily like `name` and `lore`.
+
 ### Physical Wraps
 
 Physical wraps are physical items (like a token) that can be used to apply a wrap to the item.

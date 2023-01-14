@@ -4,8 +4,8 @@ sidebar_position: 3
 
 # Collections
 ## Format
-Collections are a list of different items combined into one easy-to-use list. This is perfect if you wan't to have a wrap which is applicable 
-to more than one item.
+Collections are a list of different items combined into one easy-to-use list. This is perfect if you want to have a wrap which is applicable 
+to more than one item. For this to work, the custom model data has to be the same for all items you want to apply the wrap to.
 
 Example collection for all swords:
 ```yaml

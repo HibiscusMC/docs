@@ -21,6 +21,8 @@ permission: 'hmcwraps.fire_sword'
 uuid: 1
 # Either custom model data (1) or a hook to get the custom model id (oraxen:my_sword)
 id: '1'
+# The color of the wrap (not required)
+color: '#ff0000'
 # The physical wrap to apply (not required)
 physical: # A physical wrapper (not required)
 ```

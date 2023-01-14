@@ -48,3 +48,7 @@ This is the most basic ConfigItem one could have, but there are many other optio
 
 `amount` - How many items there should be (can NOT exceed 64) (not required)
 - `amount: 3`
+
+`color` - The color of the item either HEX or RGB (not required)
+- `color: '#ff0000'`
+- `color: '255,0,0'`

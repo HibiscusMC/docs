@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # GUI Configuration
 
-## Multiple Pages
+## Multiple Pages / Categories
 
 By default, HMCCosmetics includes one cosmetic GUI. However, you can create as many GUIs as you need.
 
@@ -25,6 +25,12 @@ You can create a button to open the next page with the `[MENU] <menu_name>` acti
       any:
         - "[MENU] main_menu"
 ```
+
+:::tip 
+
+You can see more examples of how to create multiple pages & categories at the bottom of this page, under the "Menu Examples" section.
+
+:::
 
 ## Slots System
 
@@ -81,7 +87,9 @@ For `empty` type menu items, currently, only `any` is accepted.
         - "[MESSAGE] <#d24c9f>Hello %player_name%!"
 ```
 
-### Examples
+## Examples
+
+### Action Examples
 
 Send a console command when the player removes a cosmetic:
 ```yaml
@@ -89,3 +97,61 @@ Send a console command when the player removes a cosmetic:
       on-unequip:
         - "[CONSOLE-COMMAND] say A player removed a cosmetic"
 ```
+
+### Menu Examples
+
+A simple main menu configuration with categories:
+
+`defaultmenu.yml`
+```yaml
+title: "<white>Default Menu"
+rows: 1
+items:
+  hats_menu:
+    slots:
+      - 2
+    item:
+      material: PAPER
+      name: "<blue>Hat Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] hat_cosmetics"
+  backpack_menu:
+    slots:
+      - 3
+    item:
+      material: PAPER
+      name: "<blue>Backpack Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] backpack_cosmetics"
+  hand_accessory_menu:
+    slots:
+      - 4
+    item:
+      material: PAPER
+      name: "<blue>Offhand Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] offhand_cosmetics"
+  balloon_menu:
+    slots:
+      - 5
+    item:
+      material: PAPER
+      name: "<blue>Balloon Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] balloon_cosmetics"
+```
+
+After creating this main menu file, you would then create different menus for each cosmetic type.
+

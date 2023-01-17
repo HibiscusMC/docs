@@ -87,6 +87,8 @@ For `empty` type menu items, currently, only `any` is accepted.
         - "[MESSAGE] <#d24c9f>Hello %player_name%!"
 ```
 
+## Examples
+
 ### Action Examples
 
 Send a console command when the player removes a cosmetic:

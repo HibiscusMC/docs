@@ -19,7 +19,7 @@ SWORDS:
   - 'WOODEN_SWORD'
 ```
 
-`SWORDS` can now be used in [wraps](https://docs.hibiscusmc.com/docs/hmcwraps/config/wraps).
+`SWORDS` can now be used in [wraps](https://docs.hibiscusmc.com/hmcwraps/config/wraps).
 
 ## Applying
 Just like you can configure wraps in Wrap Files and the `config.yml`, you can configure collections in Collection Files 

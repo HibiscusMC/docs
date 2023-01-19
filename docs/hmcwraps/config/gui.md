@@ -8,7 +8,7 @@ Configuring the inventory in HMCWraps is fairly simple. There is only one invent
 The GUI can be configured in the `inventory` entry in `config.yml`
 
 ## Item Options
-An item in the inventory is just a [ConfigItem](https://docs.hibiscusmc.com/docs/hmcwraps/config/item) with just one addition: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actioms)
+An item in the inventory is just a [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item) with just one addition: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actions)
 The slot of the item is determined by the entry (e.g. `45`)
 ```yaml
     45:
@@ -26,7 +26,7 @@ The slot of the item is determined by the entry (e.g. `45`)
 ```
 
 ## GUI Actions
-All actions possible on GUI items can be found here: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actions)
+All actions possible on GUI items can be found here: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actions)
 
 ## Inventory Type
 There are two types the inventory can have. Those are set

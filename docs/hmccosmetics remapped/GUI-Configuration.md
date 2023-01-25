@@ -106,6 +106,7 @@ A simple main menu configuration with categories:
 ```yaml
 title: "<white>Default Menu"
 rows: 1
+permission: hmccosmetics.menu.default
 items:
   hats_menu:
     slots:

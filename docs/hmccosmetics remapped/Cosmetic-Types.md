@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Cosmetic Types
@@ -100,6 +100,14 @@ kite:
     name: "<blue>Kite"
     amount: 1
 ```
+
+:::info
+
+If you do *not* want to use ModelEngine for a balloon, you can remove the `model` line from the balloon cosmetic configuration, which will
+automatically set the balloon to be an item type balloon. Item type balloons are more limited than ModelEngine balloons, because they must
+conform to the Java Block/Item limitations, but their physics may look better.
+
+:::
 
 ## `MAINHAND` Cosmetics
 

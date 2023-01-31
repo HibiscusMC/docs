@@ -87,6 +87,11 @@ For `empty` type menu items, currently, only `any` is accepted.
         - "[MESSAGE] <#d24c9f>Hello %player_name%!"
 ```
 
+```yaml
+    actions:
+      any:
+        - "[SOUND] minecraft:sound.name volume pitch"
+
 ## Examples
 
 ### Action Examples

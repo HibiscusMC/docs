@@ -91,6 +91,7 @@ For `empty` type menu items, currently, only `any` is accepted.
     actions:
       any:
         - "[SOUND] minecraft:sound.name volume pitch"
+```
 
 ## Examples
 

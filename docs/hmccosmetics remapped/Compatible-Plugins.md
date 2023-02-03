@@ -26,6 +26,10 @@ sidebar_position: 5
 
 ## Misc Integration
 
+### [WorldGuard](https://enginehub.org/worldguard)
+
+This allows the ability to configure zones both to enter wardrobes and to toggle cosmetics visability in a set area. 
+
 ### [HMCColor](https://polymart.org/resource/2831)
 
 This allows players to dye their equipped cosmetics in a color they choose. 

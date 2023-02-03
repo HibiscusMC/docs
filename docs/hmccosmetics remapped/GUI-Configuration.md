@@ -93,6 +93,32 @@ For `empty` type menu items, currently, only `any` is accepted.
         - "[SOUND] minecraft:sound.name volume pitch"
 ```
 
+```yaml
+    actions:
+      any:
+        - "[PARTICLE] particle amount x y z" # Particles can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html, xyz are offsets from the player. 
+```
+
+```yaml
+    actions:
+      any:
+        - "[SHOW]"
+```
+
+```yaml
+    actions:
+      any:
+        - "[HIDE]"
+```
+
+```yaml
+    actions:
+      any:
+        - "[TOGGLE]"
+```
+
+
+
 ## Examples
 
 ### Action Examples

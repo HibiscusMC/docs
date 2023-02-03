@@ -60,7 +60,7 @@ For `empty` type menu items, currently, only `any` is accepted.
 ```yaml
     actions:
       any:
-        - "[MENU] main_menu"
+        - "[MENU] main_menu" # You can add -o to the end, ex. "main_menu -o", to ignore permission of the target menu.
 ```
 
 ```yaml

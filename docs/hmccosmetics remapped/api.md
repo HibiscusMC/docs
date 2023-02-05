@@ -5,8 +5,8 @@ sidebar_position: 10
 # API
 
 ### Adding as dependency
-
-[https://img.shields.io/github/v/release/HibiscusMC/HMCCosmetics](https://repo.hibiscusmc.com/#/)
+ 
+![Image Sheild](https://img.shields.io/github/v/release/HibiscusMC/HMCCosmetics)
 
 #### Maven
 ```xml
@@ -26,24 +26,24 @@ sidebar_position: 10
 ```
 
 #### Gradle (Groovy)
-```
+```gradle
 maven {
     url "https://repo.hibiscusmc.com/releases"
 }
 ```
 
-```
+```gradle
 compileOnly "com.hibiscusmc:HMCCosmetics:{version}"
 ```
 
 #### Gradle (Kotlin)
-```
+```kts
 maven {
     url = uri("https://repo.hibiscusmc.com/releases")
 }
 ```
 
-```
+```kts
 compileOnly("com.hibiscusmc:HMCCosmetics:{version}")
 ```
 
@@ -71,9 +71,11 @@ You can get a CosmeticUser with:
 CosmeticUser user = CosmeticUsers.getUser(UUID playerUnqiueId);
 ```
 
-:::INFO
+:::info
 
 This plugin is [Open Source](https://github.com/HibiscusMC/HMCCosmetics) and you can view how every method works. I would always recommend checking the source code to get a better idea of the plugin and how best to use it in yours!
+
+The repository can be found [here](https://repo.hibiscusmc.com/#/)
 
 Need help? Join the [Disocrd](https://discord.gg/pcm8kWrdNt)! We would love to have you! 
 

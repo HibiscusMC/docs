@@ -4,6 +4,17 @@ sidebar_position: 10
 
 # API
 
+
+:::info
+
+This plugin is [Open Source](https://github.com/HibiscusMC/HMCCosmetics) and you can view how every method works. I would always recommend checking the source code to get a better idea of the plugin and how best to use it in yours!
+
+The repository can be found [here](https://repo.hibiscusmc.com/#/)
+
+Need help? Join the [Discord](https://discord.gg/pcm8kWrdNt)! We would love to have you! 
+
+:::
+
 ### Adding as dependency
  
 ![Image Sheild](https://img.shields.io/github/v/release/HibiscusMC/HMCCosmetics)
@@ -21,7 +32,7 @@ sidebar_position: 10
         <dependency>
             <groupId>com.hibiscusmc</groupId>
             <artifactId>HMCCosmetics</artifactId>
-            <version>2.1.2</version>
+            <version>{version}</version>
         </dependency>
 ```
 
@@ -70,13 +81,3 @@ You can get a CosmeticUser with:
 ```java
 CosmeticUser user = CosmeticUsers.getUser(UUID playerUnqiueId);
 ```
-
-:::info
-
-This plugin is [Open Source](https://github.com/HibiscusMC/HMCCosmetics) and you can view how every method works. I would always recommend checking the source code to get a better idea of the plugin and how best to use it in yours!
-
-The repository can be found [here](https://repo.hibiscusmc.com/#/)
-
-Need help? Join the [Disocrd](https://discord.gg/pcm8kWrdNt)! We would love to have you! 
-
-:::

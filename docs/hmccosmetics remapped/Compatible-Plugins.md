@@ -33,3 +33,11 @@ This allows the ability to configure zones both to enter wardrobes and to toggle
 ### [HMCColor](https://polymart.org/resource/2831)
 
 This allows players to dye their equipped cosmetics in a color they choose. 
+
+### [PlaceHolderAPI](https://www.spigotmc.org/resources/6245/) 
+
+Allows you access to placeholders from HMCC. You can find the placeholders [here](https://docs.hibiscusmc.com/hmccosmetics%20remapped/PlaceholderAPI)
+
+### [Premium & SuperVanish](https://www.spigotmc.org/resources/premiumvanish-stay-hidden-bungee-support.14404/) 
+
+Safely go into vanish without your cosmetics showing you off! 

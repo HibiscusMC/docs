@@ -13,8 +13,8 @@ Most of our older products only include a MCCosmetics Configuration, but if you 
 
 ## [Hibiscus Cosmetics v2](https://mcmodels.net/model/hibiscus-cosmetics-v2/)
 
-<img src="https://i.ibb.co/gTzJcND/image-2023-02-14-160350007.png"  width="500" height="500">
+<img src="https://i.ibb.co/gTzJcND/image-2023-02-14-160350007.png"  width="500" height="500"></img>
 
 ## [Hibiscus Cosmetics v1](https://mcmodels.net/model/hibiscus-cosmetics-v1/)
 
-<img src="https://i.ibb.co/xGR1RLF/image-2023-02-14-160547296.png"  width="500" height="500">
+<img src="https://i.ibb.co/xGR1RLF/image-2023-02-14-160547296.png"  width="500" height="500"></img>

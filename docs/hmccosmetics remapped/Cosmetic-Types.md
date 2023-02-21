@@ -49,12 +49,14 @@ meg_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.meg_backpack"
   model: kite
-  item:
-    material: PAPER
-    model-data: 4
-    name: "<blue>Backpack"
-    amount: 1
 ```
+
+:::caution
+
+Keep in mind that if you have an item set for the cosmetic, you will see both the item and the ModelEngine entity.
+Because of this, we recommend and defining the item in the menus file rather than setting one here.
+
+:::
 
 ## `CHESTPLATE`, `LEGGINGS`, and `BOOTS` Cosmetics
 

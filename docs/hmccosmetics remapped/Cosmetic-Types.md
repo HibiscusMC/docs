@@ -39,6 +39,25 @@ backpack:
     amount: 1
 ```
 
+
+:::tip
+
+Similar to the Balloons Feature, you can also use the `model` key to create a ModelEngine Backpack.
+Example:
+```yaml
+meg_backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.meg_backpack"
+  model: kite
+  item:
+    material: PAPER
+    model-data: 4
+    name: "<blue>Backpack"
+    amount: 1
+```
+
+:::
+
 ## `CHESTPLATE`, `LEGGINGS`, and `BOOTS` Cosmetics
 
 These cosmetics function the same as a hat, so you can use them for cosmetic armor sets.

@@ -40,7 +40,7 @@ backpack:
 ```
 
 
-:::tip
+### ModelEngine Backpack Cosmetics
 
 Similar to the Balloons Feature, you can also use the `model` key to create a ModelEngine Backpack.
 Example:
@@ -55,8 +55,6 @@ meg_backpack:
     name: "<blue>Backpack"
     amount: 1
 ```
-
-:::
 
 ## `CHESTPLATE`, `LEGGINGS`, and `BOOTS` Cosmetics
 

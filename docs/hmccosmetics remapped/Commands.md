@@ -25,3 +25,10 @@ sidebar_position: 1
 `/cosmetic hide <USERNAME>` - (hmccosmetics.cmd.hide) - Hides cosmetics on a player.
 
 `/cosmetic show <USERNAME>` - (hmccosmetics.cmd.show) - Reveals cosmetics on a player.
+
+:::info
+
+In some of the commands (apply, unapply, dye), you can use the `-s` flag at the end to run this command
+silently, which will prevent the message from being sent when ran.
+
+:::

@@ -4,6 +4,29 @@ sidebar_position: 4
 
 # GUI Configuration
 
+## Adding a Cosmetic
+
+If you just added a cosmetic to your configurations, but don't see it in a menu yet, this is because you must add it to your menu file manually.
+
+Doing this is simple, you can follow this template:
+
+```yaml
+  beanie:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:beanie
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_beanie%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_beanie%"
+    type: cosmetic
+    cosmetic: beanie
+```
+
+For material, you can use any bukkit material, or material from one of the compatiable plugins. This includes automatically getting the material info from your cosmetic
+configuration, which you can see is being done above.
+
 ## Multiple Pages / Categories
 
 By default, HMCCosmetics includes one cosmetic GUI. However, you can create as many GUIs as you need.

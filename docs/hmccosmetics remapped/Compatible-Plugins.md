@@ -41,3 +41,8 @@ Allows you access to placeholders from HMCC. You can find the placeholders [here
 ### [Premium & SuperVanish](https://www.spigotmc.org/resources/premiumvanish-stay-hidden-bungee-support.14404/) 
 
 Safely go into vanish without your cosmetics showing you off! 
+
+### [CMI](https://www.spigotmc.org/resources/3742/) 
+
+Safely go into vanish without your cosmetics showing you off! 
+

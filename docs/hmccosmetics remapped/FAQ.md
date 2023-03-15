@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 9
 ---
 
 # FAQ
@@ -28,3 +28,17 @@ Now, simply add this to your cosmetic configuration:
     dyeable: true
 ```
 , and you're done!
+
+---
+
+## Emotes are not emoting?
+
+Emotes now working can come from a variety of angles, such as forgetting to equip an emote to issues with our library. Be sure to read the error message to get a better understanding of the problem.
+
+### NoSuchElementException Error
+
+This can occur when your server is in offline mode and a player attempts to use a emote. See below on how to fix this.
+
+### Offline Mode
+
+Emotes do completely work in offline mode due to the library we use. To fix this, install [SkinsRestorer](https://www.spigotmc.org/resources/2124/) so players have skin the plugin can use. 

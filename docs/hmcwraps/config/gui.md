@@ -8,7 +8,7 @@ Configuring the inventory in HMCWraps is fairly simple. There is only one invent
 The GUI can be configured in the `inventory` entry in `config.yml`
 
 ## Item Options
-An item in the inventory is just a [ConfigItem](https://docs.hibiscusmc.com/docs/hmcwraps/config/item) with just two additions: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actioms) and `fills`, which is a number list containing all slots (excluding the set one) the item should fill.
+An item in the inventory is just a [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item) with just two additions: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actioms) and `fills`, which is a number list containing all slots (excluding the set one) the item should fill.
 
 To make the item empty (not filled with wraps), use `EMPTY` as the `id`.
 
@@ -29,7 +29,7 @@ The slot of the item is determined by the entry (e.g. `45`)
 ```
 
 ## GUI Actions
-All actions possible on GUI items can be found here: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actions)
+All actions possible on GUI items can be found here: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actions)
 
 ### Triggers
 All triggers possible in the inventory (selfexplanatory):

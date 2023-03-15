@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Cosmetic Types
@@ -38,6 +38,25 @@ backpack:
     name: "<blue>Backpack"
     amount: 1
 ```
+
+
+### ModelEngine Backpack Cosmetics
+
+Similar to the Balloons Feature, you can also use the `model` key to create a ModelEngine Backpack.
+Example:
+```yaml
+meg_backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.meg_backpack"
+  model: kite
+```
+
+:::caution
+
+Keep in mind that if you have an item set for the cosmetic, you will see both the item and the ModelEngine entity.
+Because of this, we recommend and defining the item in the menus file rather than setting one here.
+
+:::
 
 ## `CHESTPLATE`, `LEGGINGS`, and `BOOTS` Cosmetics
 
@@ -101,6 +120,14 @@ kite:
     amount: 1
 ```
 
+:::info
+
+If you do *not* want to use ModelEngine for a balloon, you can remove the `model` line from the balloon cosmetic configuration, which will
+automatically set the balloon to be an item type balloon. Item type balloons are more limited than ModelEngine balloons, because they must
+conform to the Java Block/Item limitations, but their physics may look better.
+
+:::
+
 ## `MAINHAND` Cosmetics
 
 `MAINHAND` Cosmetics items that go on your main hand. This is a cosmetic **NOT** recommend, but is still implemented if you so choose. This cosmetic has problems with being visually removed if a player moves to fast along there hotbar. 
@@ -115,3 +142,32 @@ handypack:
     name: "<blue>Handy Pack"
     amount: 1
 ```
+
+## `EMOTE` Cosmetics
+
+`EMOTE` Cosmetics are a special type of cosmetic. Emotes are played on your character and shown to other players.
+
+Adding emotes is extremely simple, you simply add the `.bbmodel` file with the emote animation to the `emotes` folder, and then configure it like so:
+
+```yaml
+handstand:
+  slot: EMOTE
+  animation: handstand
+```
+
+:::info
+
+If you use ItemsAdder, you must disable `entites.custom-entities.emotes` in the config.yml file, otherwise it will not use the proper shader files.
+
+```yaml
+entities:
+  max-furniture-vehicles-per-chunk: 30
+  allow-removing-old-furnitures_2_3_11: false
+  custom-entitites:
+    enabled: true
+    emotes: false # make sure this is set to false
+    interval-rendering-packets-ticks: 1
+    optimized-packets: true
+```
+
+:::

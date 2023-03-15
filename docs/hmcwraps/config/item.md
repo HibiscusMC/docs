@@ -14,7 +14,7 @@ item:
   ```
 This is the most basic ConfigItem one could have, but there are many other options:
 
-`id` - Either the [material name](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) or a [hook](https://docs.hibiscusmc.com/docs/hmcwraps/hooks)
+`id` - Either the [material name](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) or a [hook](https://docs.hibiscusmc.com/hmcwraps/hooks)
 - `id: 'DIAMOND_SWORD'`
 
 `name` - The item name formatted with MiniMessage

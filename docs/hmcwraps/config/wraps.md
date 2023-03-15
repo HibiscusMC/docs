@@ -6,10 +6,10 @@ sidebar_position: 2
 
 ## Format
 ### Wraps
-Adding wraps is an extremely simple task in HMCWraps. You can use all the options from the [ConfigItem](https://docs.hibiscusmc.com/docs/hmcwraps/config/item) except:
+Adding wraps is an extremely simple task in HMCWraps. You can use all the options from the [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item) except:
 
-- `id` now takes the custom model id or a [hook](https://docs.hibiscusmc.com/docs/hmcwraps/hooks) of the wrap, which also applies when wrapping an item
-- `actions` - Do something when the wrap gets wrapped, unwrapped or previewed. More on that here: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actions)
+- `id` now takes the custom model id or a [hook](https://docs.hibiscusmc.com/hmcwraps/hooks) of the wrap, which also applies when wrapping an item
+- `actions` - Do something when the wrap gets wrapped, unwrapped or previewed. More on that here: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actions)
 - `wrap-name` - The name the item should have after being wrapped.
 - `wrap-lore` - The lore the item should have after being wrapped.
 - All other changes only affect the item shown in the inventory
@@ -34,10 +34,23 @@ wrap-lore:
 physical: # A physical wrapper (not required)
 ```
 
+### Locked options
+
+If you want to have the plugin display something else when the player does not have permissions for the wrap, you can add the following stuff:
+
+`locked-item` is just a [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item) which will be displayed.
+
+However, if you don't want to change the whole item but just the lore and the display name, you can use the following options:
+
+- `locked-name`
+- `locked-lore`
+
+Both of them can be configured regularily like `name` and `lore`.
+
 ### Physical Wraps
 
 Physical wraps are physical items (like a token) that can be used to apply a wrap to the item.
-The configuration for physical wraps really is just a [ConfigItem](https://docs.hibiscusmc.com/docs/hmcwraps/config/item), with one single addition:
+The configuration for physical wraps really is just a [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item), with one single addition:
 
 - `keep-after-unwrap` - When an item is wrapped with the physical wrapper, this option decides, if the player gets this wrap back, when they unwrap the item.
 
@@ -101,5 +114,5 @@ items: # Items entry in fire_wraps.yml
 
 **References**: 
 - [Materials](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
-- [Hooks](https://docs.hibiscusmc.com/docs/hmcwraps/hooks)
-- [Collections](https://docs.hibiscusmc.com/docs/hmcwraps/config/collections)
+- [Hooks](https://docs.hibiscusmc.com/hmcwraps/hooks)
+- [Collections](https://docs.hibiscusmc.com/hmcwraps/config/collections)

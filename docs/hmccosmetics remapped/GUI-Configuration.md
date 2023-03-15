@@ -4,7 +4,30 @@ sidebar_position: 4
 
 # GUI Configuration
 
-## Multiple Pages
+## Adding a Cosmetic
+
+If you just added a cosmetic to your configurations, but don't see it in a menu yet, this is because you must add it to your menu file manually.
+
+Doing this is simple, you can follow this template:
+
+```yaml
+  beanie:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:beanie
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_beanie%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_beanie%"
+    type: cosmetic
+    cosmetic: beanie
+```
+
+For material, you can use any bukkit material, or material from one of the compatiable plugins. This includes automatically getting the material info from your cosmetic
+configuration, which you can see is being done above.
+
+## Multiple Pages / Categories
 
 By default, HMCCosmetics includes one cosmetic GUI. However, you can create as many GUIs as you need.
 
@@ -25,6 +48,12 @@ You can create a button to open the next page with the `[MENU] <menu_name>` acti
       any:
         - "[MENU] main_menu"
 ```
+
+:::tip 
+
+You can see more examples of how to create multiple pages & categories at the bottom of this page, under the "Menu Examples" section.
+
+:::
 
 ## Slots System
 
@@ -54,7 +83,7 @@ For `empty` type menu items, currently, only `any` is accepted.
 ```yaml
     actions:
       any:
-        - "[MENU] main_menu"
+        - "[MENU] main_menu" # You can add -o to the end, ex. "main_menu -o", to ignore permission of the target menu.
 ```
 
 ```yaml
@@ -81,7 +110,41 @@ For `empty` type menu items, currently, only `any` is accepted.
         - "[MESSAGE] <#d24c9f>Hello %player_name%!"
 ```
 
-### Examples
+```yaml
+    actions:
+      any:
+        - "[SOUND] minecraft:sound.name volume pitch"
+```
+
+```yaml
+    actions:
+      any:
+        - "[PARTICLE] particle amount x y z" # Particles can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html, xyz are offsets from the player. 
+```
+
+```yaml
+    actions:
+      any:
+        - "[SHOW]"
+```
+
+```yaml
+    actions:
+      any:
+        - "[HIDE]"
+```
+
+```yaml
+    actions:
+      any:
+        - "[TOGGLE]"
+```
+
+
+
+## Examples
+
+### Action Examples
 
 Send a console command when the player removes a cosmetic:
 ```yaml
@@ -89,3 +152,62 @@ Send a console command when the player removes a cosmetic:
       on-unequip:
         - "[CONSOLE-COMMAND] say A player removed a cosmetic"
 ```
+
+### Menu Examples
+
+A simple main menu configuration with categories:
+
+`defaultmenu.yml`
+```yaml
+title: "<white>Default Menu"
+rows: 1
+permission: hmccosmetics.menu.default
+items:
+  hats_menu:
+    slots:
+      - 2
+    item:
+      material: PAPER
+      name: "<blue>Hat Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] hat_cosmetics"
+  backpack_menu:
+    slots:
+      - 3
+    item:
+      material: PAPER
+      name: "<blue>Backpack Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] backpack_cosmetics"
+  hand_accessory_menu:
+    slots:
+      - 4
+    item:
+      material: PAPER
+      name: "<blue>Offhand Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] offhand_cosmetics"
+  balloon_menu:
+    slots:
+      - 5
+    item:
+      material: PAPER
+      name: "<blue>Balloon Cosmetics"
+      amount: 1
+    type: empty
+    actions:
+      any:
+        - "[MENU] balloon_cosmetics"
+```
+
+After creating this main menu file, you would then create different menus for each cosmetic type.
+

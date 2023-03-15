@@ -40,11 +40,28 @@ There are many actions registered that can be used:
 `PARTICLE_MULTI` - Shows multiple [particles](https://github.com/Owen1212055/ParticleHelper/blob/main/api/src/main/java/com/owen1212055/particlehelper/api/type/Particles.java)
 - `HEART 10 0.1 0.1 0.1` - amount, x, y and z offset
 
+`CLOSE_INVENTORY` - Closes the inventory of the player. No arguments needed.
+
+`TOGGLE_FILTER` - Toggle the [filtering](https://docs.hibiscusmc.com/hmcwraps/config/filter) of the GUI. No arguments needed.
+
+`CLEAR_FAVORITES` - Clear all [favorites](https://docs.hibiscusmc.com/hmcwraps/config/favorites).
+
+`WRAP` - Wrap the item in main hand with either the clicked ([GUI](https://docs.hibiscusmc.com/hmcwraps/config/gui)) or the supplied wrap.
+- No arguments when using in GUI actions on wraps.
+- `fire_sword`
+
+`PREVIEW` - Preview either the clicked ([GUI](https://docs.hibiscusmc.com/hmcwraps/config/gui)) or the supplied wrap.
+- No arguments when using in GUI actions on wraps.
+- `fire_sword`
+
+
 > **Note**: There are many particles and particle configurations. If you understand a bit of code, you can try the link above, 
 > but I recommend just asking `Skyslycer` for specific particle configurations in the [HCS support server](https://discord.gg/pcm8kWrdNt). 
 
 ### Inventory Specific Actions
 These actions only work when used in the inventory configuration.
+
+`SET_FAVORITE` - Set the clicked wrap as a favorite. Only possible on wrap actions.
 
 `SCROLL_FORTH` or `NEXT_PAGE` - Go to the next page or scroll further
 - `''` - Yes, just put empty parentheses
@@ -90,7 +107,7 @@ items:
         preview: {}
 ```
 
-EXAMPLE B: `actions on an inventory item`
+Example B: `actions on an inventory item`
 ```yaml
 inventory:
   items:

@@ -10,6 +10,8 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 
 - `id` now takes the custom model id or a [hook](https://docs.hibiscusmc.com/docs/hmcwraps/hooks) of the wrap, which also applies when wrapping an item
 - `actions` - Do something when the wrap gets wrapped, unwrapped or previewed. More on that here: [Actions](https://docs.hibiscusmc.com/docs/hmcwraps/config/actions)
+- `wrap-name` - The name the item should have after being wrapped.
+- `wrap-lore` - The lore the item should have after being wrapped.
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:
@@ -23,6 +25,11 @@ uuid: 1
 id: '1'
 # The color of the wrap (not required)
 color: '#ff0000'
+# The name applied to the item when wrapped
+wrap-name: '<red>Something cool'
+# The lore applied to the item when wrapped
+wrap-lore:
+  - 'hello!'
 # The physical wrap to apply (not required)
 physical: # A physical wrapper (not required)
 ```

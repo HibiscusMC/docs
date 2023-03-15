@@ -52,3 +52,6 @@ This is the most basic ConfigItem one could have, but there are many other optio
 `color` - The color of the item either HEX or RGB (not required)
 - `color: '#ff0000'`
 - `color: '255,0,0'`
+
+`nbt` - Apply an NBT to an item. This strictly follows Minecraft's container based approach.
+- `nbt: '{publicBukkitValues:{somePlugin:{someValue:"sus"}}}'`

@@ -7,11 +7,22 @@ If you are a developer and want to create an addon or extension, you can use the
 The most useful source of information are the [JavaDocs](https://hibiscusmc.github.io/HMCWraps/), but you can just ask the developer in our [Discord server](https://discord.gg/pcm8kWrdNt). 
 
 ## Build Tool
+### Gradle Kotlin
+```groovy
+repositories {
+    maven("https://repo.hibiscusmc.com/releases/")
+}
+
+dependencies {
+    compile("de.skyslycer.hmcwraps:api:1.0.0")
+}
+```
+
 ### Gradle Groovy
 ```groovy
 repositories {
     maven {
-        url "https://repo.skyslycer.de/releases/"
+        url "https://repo.hibiscusmc.com/releases/"
     }
 }
 
@@ -20,23 +31,12 @@ dependencies {
 }
 ```
 
-### Gradle Kotlin
-```groovy
-repositories {
-    maven("https://repo.skyslycer.de/releases/")
-}
-
-dependencies {
-    compile("de.skyslycer.hmcwraps:api:1.0.0")
-}
-```
-
 ### Maven
 ```xml
 <repositories>
   <repository>
     <name>SkyRepo</name>
-    <url>https://repo.skyslycer.de/releases/</url>
+    <url>https://repo.hibiscusmc.com/releases/</url>
   </repository>  
 </repositories>
 
@@ -53,7 +53,7 @@ dependencies {
 ### Getting the plugin instance
 ```java
 if (Bukkit.getPluginManager().isPluginEnabled("HMCWraps")) {
-    var wraps = (IHMCWraps) Bukkit.getPluginManager().getPlugin(IHMCWraps.class);
+    var wraps = (HMCWraps) Bukkit.getPluginManager().getPlugin(HMCWraps.class);
 }
 ```
 

@@ -11,6 +11,10 @@ Most of our older products only include a MCCosmetics Configuration, but if you 
 
 # Latest Cosmetic Packs
 
+## [Hibiscus Cosmetics v3](https://mcmodels.net/model/hibiscus-cosmetics-v3/)
+
+<img src ="https://i.ibb.co/qCNWqbX/image-2023-03-31-094422058.png"  width="500" height="500"></img>
+
 ## [Hibiscus Cosmetics v2](https://mcmodels.net/model/hibiscus-cosmetics-v2/)
 
 <img src="https://i.ibb.co/gTzJcND/image-2023-02-14-160350007.png"  width="500" height="500"></img>

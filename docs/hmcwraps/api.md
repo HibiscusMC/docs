@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    compile("de.skyslycer.hmcwraps:api:1.0.0")
+    compileOnly("de.skyslycer.hmcwraps:api:1.0.0")
 }
 ```
 
@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-    compile "de.skyslycer.hmcwraps:api:1.0.0"
+    compileOnly "de.skyslycer.hmcwraps:api:1.0.0"
 }
 ```
 

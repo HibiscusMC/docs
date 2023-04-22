@@ -10,6 +10,8 @@ sidebar_position: 7
 
 `%hmccosmetics_unlocked_<id>%` - Returns a true or false if a user can equip that cosmetic.
 
-`%hmccosmetics_equipped_<id>` - Returns if a player has a certain cosmetic equipped.  
+`%hmccosmetics_equipped_<id>%` - Returns `true` or `false` depending if a player has a certain cosmetic equipped.  
+
+`%hmccosmetics_equipped_<slot>%` - Returns `true` or `false` depending if a player has a cosmetic equipped in a slot
 
 `%hmccosmetics_wardrobe-enabled%` - Returns if the player is currently inside of the wardrobe

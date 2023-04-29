@@ -12,6 +12,7 @@ This can easily be solved by enabling preservation for the property you want to 
 - Color
 - Name
 - Lore
+- Flags
 - NBT (cannot be disabled or edited)
 
 When enabling `original-enabled`, it will store the original value in NBT and restore it once the item is unwrapped.

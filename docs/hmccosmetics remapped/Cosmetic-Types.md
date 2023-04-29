@@ -32,6 +32,7 @@ beanie:
 backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack"
+  show-lead: true
   item:
     material: PAPER
     model-data: 4
@@ -48,6 +49,7 @@ Example:
 meg_backpack:
   slot: BACKPACK
   permission: "hmccosmetics.meg_backpack"
+  show-lead: true
   model: kite
 ```
 

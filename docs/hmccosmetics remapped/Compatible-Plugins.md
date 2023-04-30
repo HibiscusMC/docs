@@ -18,7 +18,7 @@ sidebar_position: 5
 
 `material: mythicmobs:<itemid>`
 
-### [Denizen](https://www.spigotmc.org/resources/denizen.21039/)
+### [Denizen](https://www.spigotmc.org/resources/21039/)
 
 `material: denizen:<denizen_script_item>` See example [here](https://github.com/HibiscusMC/HMCCosmetics/pull/99)
 
@@ -42,7 +42,7 @@ This allows players to dye their equipped cosmetics in a color they choose.
 
 Allows you access to placeholders from HMCC. You can find the placeholders [here](https://docs.hibiscusmc.com/hmccosmetics%20remapped/PlaceholderAPI)
 
-### [Premium & SuperVanish](https://www.spigotmc.org/resources/premiumvanish-stay-hidden-bungee-support.14404/) 
+### [Premium & SuperVanish](https://www.spigotmc.org/resources/14404/) 
 
 Safely go into vanish without your cosmetics showing you off! 
 

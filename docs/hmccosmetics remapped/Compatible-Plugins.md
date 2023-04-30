@@ -18,6 +18,10 @@ sidebar_position: 5
 
 `material: mythicmobs:<itemid>`
 
+### [Denizen](https://www.spigotmc.org/resources/denizen.21039/)
+
+`material: denizen:<denizen_script_item>` See example [here](https://github.com/HibiscusMC/HMCCosmetics/pull/99)
+
 ## Entity Integrations
 
 ### [ModelEngine](https://www.spigotmc.org/resources/79477/)
@@ -44,5 +48,9 @@ Safely go into vanish without your cosmetics showing you off!
 
 ### [CMI](https://www.spigotmc.org/resources/3742/) 
 
-Safely go into vanish without your cosmetics showing you off! 
+Use CMI Vanish Module to go into vanish without your cosmetics getting in the way! 
+
+### [LibsDisguises](https://github.com/libraryaddict/LibsDisguises)
+
+When you disguise yourself as a mob your disguises will automatically hide themselves. 
 

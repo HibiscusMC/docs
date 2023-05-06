@@ -49,9 +49,9 @@ You can create a button to open the next page with the `[MENU] <menu_name>` acti
         - "[MENU] main_menu"
 ```
 
-:::info 
+:::tip 
 
-Before v2.3.0, you could only set a locked cosmetic gui item with `locked-name` and `locked-lore` under the item. 
+You can see more examples of how to create multiple pages & categories at the bottom of this page, under the "Menu Examples" section.
 
 :::
 
@@ -109,7 +109,11 @@ This system allows you to set an item to show when a player does not have permis
         - "<gray>Collect some trash to unlock this cosmetic!"
 ```
 
+:::info 
 
+Before v2.3.0, you could only set a locked cosmetic gui item with `locked-name` and `locked-lore` under the item. 
+
+:::
 
 ## Action System
 

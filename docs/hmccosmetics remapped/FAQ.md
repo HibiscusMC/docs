@@ -28,6 +28,11 @@ Now, simply add this to your cosmetic configuration:
     dyeable: true
 ```
 , and you're done!
+---
+
+## I can't see my cosmetics!
+
+Make sure you haven't accidentally ran `/cosmetic hide` - you can type `/cosmetic show` to make cosmetics reappear.
 
 ---
 

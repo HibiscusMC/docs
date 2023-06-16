@@ -31,6 +31,7 @@ final Location location = new Location(Bukkit.getWorld("world"), 0, 0, 0);
 final BlockData blockData = api.getBlockDataAt(location);
 ```
 This returns the BlockData at a location.
+<br><br>
 
 [HMCLeavesAPI#isCustomBlock](https://github.com/HibiscusMC/HMCLeaves/blob/ee6ab7de5a2fd0f996b38fce31c463d2f05c9f40/src/main/java/io/github/fisher2911/hmcleaves/api/HMCLeavesAPI.java#LL69C20-L69C33)
 
@@ -40,6 +41,7 @@ final Location location = new Location(Bukkit.getWorld("world"), 0, 0, 0);
 final boolean isCustomBlock = api.isCustomBlock(location);
 ```
 This returns whether the block at a location has custom data.
+<br><br>
 
 [HMCLeavesAPI#setCustomBlock](https://github.com/HibiscusMC/HMCLeaves/blob/ee6ab7de5a2fd0f996b38fce31c463d2f05c9f40/src/main/java/io/github/fisher2911/hmcleaves/api/HMCLeavesAPI.java#LL82C20-L82C34)
 
@@ -52,6 +54,7 @@ final BlockData blockData = api.setCustomBlock(location, blockId, true);
 This sets the block at a location to a custom block. The parameter `setBlockInWorld` should almost always be set to
 true, or else the data in the world and stored by HMCLeaves may be incompatible. This returns false if the BlockData 
 was not found, and true if it was and the block was set.
+<br><br>
 
 [HMCLeavesAPI#removeBlockDataAt](https://github.com/HibiscusMC/HMCLeaves/blob/ee6ab7de5a2fd0f996b38fce31c463d2f05c9f40/src/main/java/io/github/fisher2911/hmcleaves/api/HMCLeavesAPI.java#LL101C22-L101C39)
 
@@ -63,3 +66,4 @@ final BlockData blockData = api.removeBlockDataAt(location, true);
 This removes the block data at a location. The parameter `setBlockInWorld` should almost always be set to
 true, or else the data in the world and stored by HMCLeaves may be incompatible. This returns true if the block was 
 able to be removed and was in the world, and false if it was not.
+<br><br>

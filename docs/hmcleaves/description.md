@@ -1,4 +1,4 @@
-## Plugin Description
+# Description
 
 HMCLeaves allows custom leaves, logs and saplings to be placed in the world. This also means
 that transparent block textures can be used for custom blocks.

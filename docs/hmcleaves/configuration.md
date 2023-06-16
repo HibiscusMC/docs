@@ -1,4 +1,4 @@
-#Configuration
+# Configuration
 
 There are three different configuration sections:
 * leaves

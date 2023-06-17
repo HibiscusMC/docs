@@ -46,4 +46,11 @@ This can occur when your server is in offline mode and a player attempts to use 
 
 ### Offline Mode
 
-Emotes do completely work in offline mode due to the library we use. To fix this, install [SkinsRestorer](https://www.spigotmc.org/resources/2124/) so players have skin the plugin can use. 
+Emotes do completely work in offline mode due to the library we use. To fix this, install [SkinsRestorer](https://www.spigotmc.org/resources/2124/) so players have skin the plugin can use.
+
+---
+
+## Player Skins / Heads Messed Up
+
+This is because of the shaders file provided in the plugin. Currently, these shaders do not work 1.19.4+ due to changes to Minecraft shaders. In order to fix this, you need to delete the 3 relevant files. 
+It should be in a file location similar to `assets/shaders/core/rendertype_entity_translucent` (It may vary depending on your resource pack plugin). 

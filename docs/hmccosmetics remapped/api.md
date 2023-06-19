@@ -66,18 +66,18 @@ depend: [HMCCosmetics]
 
 ### Events
 
-All events can be found here: https://github.com/HibiscusMC/HMCCosmetics/tree/remapped/common/src/main/java/com/hibiscusmc/hmccosmetics/api
+All events can be found [here](https://github.com/HibiscusMC/HMCCosmetics/tree/remapped/common/src/main/java/com/hibiscusmc/hmccosmetics/api/events).
 
 ### Cosmetics
 
 You can get a cosmetic with:
 ```java
-Cosmetic cosmetic = Cosmetics.getCosmetic(String id);
+Cosmetic cosmetic = HMCCosmeticsAPI.getCosmetic(id);
 ```
 
-### CosmeticUsers
+### Cosmetic User
 
 You can get a CosmeticUser with:
 ```java
-CosmeticUser user = CosmeticUsers.getUser(UUID playerUnqiueId);
+CosmeticUser user = HMCCosmeticsAPI.getUser(playerUnqiueId);
 ```

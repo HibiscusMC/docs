@@ -54,3 +54,13 @@ Emotes do completely work in offline mode due to the library we use. To fix this
 
 This is because of the shaders file provided in the plugin. Currently, these shaders do not work 1.19.4+ due to changes to Minecraft shaders. In order to fix this, you need to delete the 3 relevant files. 
 It should be in a file location similar to `assets/shaders/core/rendertype_entity_translucent` (It may vary depending on your resource pack plugin). 
+
+---
+
+## My backpack is in the wrong position / above my head
+
+Some models you purchase may not include translations specifically for cosmetic plugins. Because the backpack isn't actually mounted to your player and rather is connected to an armorstand, you need to translate the model down.
+
+To do this, install [Blockbench](https://www.blockbench.net), and then open your model. At the top right, you should see a "Display" tab. Once there, click on the head slot and then adjust the Y of the backpack to be much lower, usually near your players feet. Rinse and repeat until it is working properly.
+
+You can also check the included cosmetics for a point of reference.

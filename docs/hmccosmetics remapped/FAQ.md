@@ -57,6 +57,12 @@ It should be in a file location similar to `assets/shaders/core/rendertype_entit
 
 ---
 
+## CosmeticCore / MCCosmetic Configurations Compadibile with HMCC?
+
+No, CosmeticCore and MCCosmetic configurations are not compatible with HMCC. You will need to convert them into HMCC format. You can find a converter on the support discord server to help you convert files. 
+
+---
+
 ## My backpack is in the wrong position / above my head
 
 Some models you purchase may not include translations specifically for cosmetic plugins. Because the backpack isn't actually mounted to your player and rather is connected to an armorstand, you need to translate the model down.

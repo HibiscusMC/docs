@@ -57,7 +57,7 @@ It should be in a file location similar to `assets/shaders/core/rendertype_entit
 
 ---
 
-## CosmeticCore / MCCosmetic Configurations Compadibile with HMCC?
+## Are CosmeticCore / MCCosmetic Configurations Compatible with HMCC?
 
 No, CosmeticCore and MCCosmetic configurations are not compatible with HMCC. You will need to convert them into HMCC format. You can find a converter on the support discord server to help you convert files. 
 
@@ -70,3 +70,11 @@ Some models you purchase may not include translations specifically for cosmetic 
 To do this, install [Blockbench](https://www.blockbench.net), and then open your model. At the top right, you should see a "Display" tab. Once there, click on the head slot and then adjust the Y of the backpack to be much lower, usually near your players feet. Rinse and repeat until it is working properly.
 
 You can also check the included cosmetics for a point of reference.
+
+---
+
+## My Cosmetic turned into a real item!
+
+This is because you have entered the creative mode. Creative modes accept anything a client says it has, meaning, when HMCC sends fake items, creative mode turns them into real items. This only affects `HATS`, `CHESTPLATE`, `LEGGINGS`, and `BOOTS` cosmetics. 
+
+You can attempt to fix this by turning `cosmetic-settings.destroy-loose-cosmetics` to true, which will attempt to destroy these items when they are found. 

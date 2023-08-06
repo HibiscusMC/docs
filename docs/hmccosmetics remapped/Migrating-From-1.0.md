@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 6000
 ---
 
 # Migrating from HMCCosmetics 1.0

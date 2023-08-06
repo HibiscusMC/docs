@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 1000
 ---
 
 # API
@@ -9,7 +9,7 @@ sidebar_position: 10
 
 This plugin is [Open Source](https://github.com/HibiscusMC/HMCCosmetics) and you can view how every method works. I would always recommend checking the source code to get a better idea of the plugin and how best to use it in yours!
 
-The repository can be found [here](https://repo.hibiscusmc.com/#/)
+The repository can be found [here](https://repo.hibiscusmc.com/#/).
 
 Need help? Join the [Discord](https://discord.gg/pcm8kWrdNt)! We would love to have you! 
 
@@ -67,6 +67,10 @@ depend: [HMCCosmetics]
 ### Events
 
 All events can be found [here](https://github.com/HibiscusMC/HMCCosmetics/tree/remapped/common/src/main/java/com/hibiscusmc/hmccosmetics/api/events).
+
+### API Class
+
+A stable API class can be found [here](https://github.com/HibiscusMC/HMCCosmetics/blob/remapped/common/src/main/java/com/hibiscusmc/hmccosmetics/api/HMCCosmeticsAPI.java)
 
 ### Cosmetics
 

@@ -2,7 +2,7 @@
 sidebar_position: 1000
 ---
 
-# Expand your HMCCosmetics Experience
+# Addons / Cosmetic Packs
 
 ## Plugins
 

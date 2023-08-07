@@ -32,7 +32,11 @@ sidebar_position: 5000
 
 ### [WorldGuard](https://enginehub.org/worldguard)
 
-This allows the ability to configure zones both to enter wardrobes and to toggle cosmetics visability in a set area. 
+This allows the ability to configure zones both to enter wardrobes and to toggle cosmetics visability in a set area. Adds 3 new flags:
+
+- `cosmetic-enable` (true/false)
+- `emotes-enable` (true/false)
+- `cosmetic-wardrobe` (Wardrobe ID)
 
 ### [HMCColor](https://polymart.org/resource/2831)
 

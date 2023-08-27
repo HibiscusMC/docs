@@ -18,6 +18,10 @@ sidebar_position: 5000
 
 `material: mythicmobs:<itemid>`
 
+### [MMOItems](https://www.spigotmc.org/resources/39267/)
+
+`material: mmoitems:<type>:<itemid>`
+
 ### [Denizen](https://www.spigotmc.org/resources/21039/)
 
 `material: denizen:<denizen_script_item>` See example [here](https://github.com/HibiscusMC/HMCCosmetics/pull/99)

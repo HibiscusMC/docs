@@ -11,7 +11,7 @@ blocks are not changed.
 
 ### Downloads
 
-* [Spigot](https://www.spigotmc.org/resources/hmcleaves.106418/) - Spigot Resource Page
+* [Spigot](https://www.spigotmc.org/resources/111209/) - Spigot Resource Page
 * [Polymart](https://polymart.org/resource/hmcleaves.3136) - Polymart Resource Page
 
 ### Support

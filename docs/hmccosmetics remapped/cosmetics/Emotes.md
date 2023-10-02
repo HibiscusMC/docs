@@ -5,7 +5,7 @@ sidebar_position: 5000
 
 ## `EMOTE` Cosmetics
 
-:::warn
+:::warning
 
 1.19.4 introduces problems with the shader that is used for emotes. Using the shader renders the player's head block improperly. See [here](https://docs.hibiscusmc.com/hmccosmetics%20remapped/FAQ#player-skins--heads-messed-up) on how to remove the shader from your resource pack. 
 

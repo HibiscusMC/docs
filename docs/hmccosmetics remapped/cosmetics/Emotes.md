@@ -5,6 +5,13 @@ sidebar_position: 5000
 
 ## `EMOTE` Cosmetics
 
+:::warn
+
+1.19.4 introduces problems with the shader that is used for emotes. Using the shader renders the player's head block improperly. See [here](https://docs.hibiscusmc.com/hmccosmetics%20remapped/FAQ#player-skins--heads-messed-up) on how to remove the shader from your resource pack. 
+
+:::warn
+
+
 `EMOTE` Cosmetics are a special type of cosmetic. Emotes are played on your character and shown to other players.
 
 Adding emotes is extremely simple, you simply add the `.bbmodel` file with the emote animation to the `emotes` folder, and then configure it like so:

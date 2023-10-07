@@ -12,7 +12,8 @@ An item in the inventory is just a [ConfigItem](https://docs.hibiscusmc.com/hmcw
 
 To make the item empty (not filled with wraps), use `EMPTY` as the `id`.
 
-The slot of the item is determined by the entry (e.g. `45`)
+The slot of the item is determined by the entry (e.g. `45`).
+You also add a `fills` list to the item that contain other slots the item should fill.
 ```yaml
     45:
       # The Bukkit material or hook

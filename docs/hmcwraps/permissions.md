@@ -53,3 +53,9 @@ HMCWraps has a fairly simple permission system. Each command has its own permiss
 - Admin
 - Management
 - Physical
+
+`hmcwraps.debug` - Gives access to the debug commands
+- Admin
+
+`hmcwraps.commands.create` - Gives access to the create command
+- Admin

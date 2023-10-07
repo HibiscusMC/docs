@@ -20,6 +20,9 @@ sidebar_position: 2
 
 `/wraps convert [confirm]` - Start the ItemSkins convert process
 
+`/wraps create <file> <wrap uuid>` - Create a new wrap in the specified file from the item you're holding
+with the specified UUID. Existing files will be appended.
+
 `/wraps list` - List all currently loaded wraps and collections
 
 `/wraps help` - List all commands

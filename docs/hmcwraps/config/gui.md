@@ -33,14 +33,13 @@ You also add a `fills` list to the item that contain other slots the item should
 All actions possible on GUI items can be found here: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actions)
 
 ### Triggers
-All triggers possible in the inventory (selfexplanatory):
+All triggers possible in the inventory (self-explanatory):
 - `any`
 - `left`
 - `middle`
 - `right`
 - `shift-any`
 - `shift-left`
-- `shift-middle`
 - `shift-right`
 
 ## Inventory Type

@@ -71,7 +71,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '',
+                href: 'https://docs.hibiscusmc.com/',
               },
             ],
           },

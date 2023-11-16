@@ -28,7 +28,7 @@ sidebar_position: 5000
 
 ## Entity Integrations
 
-### [ModelEngine 3](https://www.spigotmc.org/resources/79477/)
+### [ModelEngine 4](https://www.spigotmc.org/resources/79477/)
 
 `model: <modelId>`
 

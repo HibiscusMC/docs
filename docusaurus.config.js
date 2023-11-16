@@ -57,7 +57,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/hibiscusmc',
+            href: 'https://github.com/HibiscusMC/docs/',
             label: 'GitHub',
             position: 'right',
           },
@@ -71,7 +71,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: 'docs/hmccosmetics/Commands',
+                to: 'docs/intro',
               },
             ],
           },

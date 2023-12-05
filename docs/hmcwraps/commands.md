@@ -34,3 +34,21 @@ with the specified UUID. Existing files will be appended.
 `[]` - Optional
 
 `{actions}` - A flag which can be activated by adding `-actions` to the command and activates the configured actions 
+
+---
+
+# Debug Commands
+
+`/wraps debug info [-upload]` - Shows (and uploads) plugin and server information.
+
+`/wraps debug config [-upload]` - Shows (and uploads) the plugin configuration.
+
+`/wraps debug wraps [-upload]` - Shows (and uploads) a list of wraps.
+
+`/wraps debug wrap <wrap uuid> [-upload]` - Shows (and uploads) a specified wrap.
+
+`/wraps debug player <player> [-upload]` - Shows (and uploads) information about a player and the item the player is holding.
+
+`/wraps debug log [log file name]` - Uploads a server log. If no log file is specified, latest.log will be uploaded.
+
+`/wraps debug upload <file path>` - Uploads the specified file. The root is the `HMCWraps` folder.

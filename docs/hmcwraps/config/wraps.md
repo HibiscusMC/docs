@@ -63,6 +63,40 @@ in this case `LEATHER_HELMET`.
 
 In order for this to function flawlessly, some inventories like crafting, enchanting and anvils have been disabled for imitated items.
 
+### Range
+To control which items should or should not have acces to that wrap more precisly, you can use ranges.
+
+Each criteria has two lists, which you can't use simultaneously: 
+
+`exclude` - Any item matching any of the entries won't have access to that wrap.
+
+`include` - Any item matching any of the entries will exclusively have access to that wrap. Items that don't match won't have access.
+
+Ranges have the following criteria:
+
+`model-id` - This checks for the model id. Use `-1` as the default model id.
+
+`color` - This checks for the color. Use `none` as no color.
+
+`oraxen` - This checks for the Oraxen id if available. You use the regular hook syntax without the `oraxen:` prefix.
+
+`itemsadder` - This checks for the ItemsAdder id if available. You use the regular hook syntax without the `itemsadder:` prefix.
+
+`mythic` - This checks for the Crucible id if available. You use the regular hook syntax without the `mythic:` prefix.
+
+#### Example
+
+```yaml
+range: 
+  model-id:
+    include:
+    - 22
+    - 23
+    - 24
+```
+Only items with the model id 22, 23 or 24 can be wrapped with that wrap.
+
+
 ### Physical Wraps
 
 Physical wraps are physical items (like a token) that can be used to apply a wrap to the item.

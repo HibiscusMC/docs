@@ -12,6 +12,7 @@ You can configure what permissions are checked in the `permissions` section of t
 - `check-permission-virtual` - If the permission should be checked during usage of virtually wrapped items.
 - `permission-physical` - If permissions should be checked when wrapping an item physically. (Useful to have it disabled when you want player to trade wraps.)
 - `permission-virtual` - If permissions should be checked when wrapping an item virtually. 
+- `inventory-check-interval` - The interval in minutes to check for wraps without permission, set to -1 to disable.
 
 ## Example A
 ```yaml
@@ -31,4 +32,6 @@ permissions:
   permission-physical: false
   # ...virtual wraps
   permission-virtual: true
-``
+  # The interval in minutes to check for wraps without permission, set to -1 to disable
+  inventory-check-interval: 10
+```

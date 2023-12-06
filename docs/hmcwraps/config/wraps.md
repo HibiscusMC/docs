@@ -15,6 +15,7 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 - `wrap-lore` - The lore the item should have after being wrapped.
 - `wrap-nbt` - The NBT the item should have after being wrapped.
 - `wrap-flags` - The flags the item should have after being wrapped.
+- `wrap-durability` - The durability the item should have after being wrapped.
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:

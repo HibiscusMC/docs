@@ -55,3 +55,6 @@ This is the most basic ConfigItem one could have, but there are many other optio
 
 `nbt` - Apply an NBT to an item. This strictly follows Minecraft's container based approach.
 - `nbt: '{publicBukkitValues:{somePlugin:{someValue:"sus"}}}'`
+
+`durability` - Set the current durability of an item. This can't exceed Minecraft's limit.
+- `durability: 20`

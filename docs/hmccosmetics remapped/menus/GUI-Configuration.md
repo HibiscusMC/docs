@@ -72,6 +72,30 @@ The slot system is similar to other plugins, allowing both single or multiple sl
         - "<gray>Colorful balloon!"
 ```
 
+## Priority System
+
+The priority system simply allows you to decide which item to show if there are more than one item amongst one item slot. The higher the number, the more priority it has.
+The default value is 1. 
+
+```yaml
+  test1:
+    slots:
+      - 1
+    item:
+      material: RED_DYE
+      name: "<red>Test 1"
+    type: EMPTY
+    priority: 5 # Since 5 is bigger than 1, this will take priority. 
+  test2:
+    slots:
+      - 1
+    item:
+      material: BLUE_DYE
+      name: "<BLUE>Test 2"
+    type: EMPTY
+    priority: 1
+```
+
 ## Equipped Cosmetic System
 
 This system allows you to set an item to show when a player is already wearing a certain cosmetic.

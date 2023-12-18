@@ -26,6 +26,10 @@ sidebar_position: 5000
 
 `material: denizen:<denizen_script_item>` See example [here](https://github.com/HibiscusMC/HMCCosmetics/pull/99)
 
+### [Eco](https://github.com/Auxilor/eco)
+
+`material: "eco:<item_lookup>"` See documentation [here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
+
 ## Entity Integrations
 
 ### [ModelEngine 4](https://www.spigotmc.org/resources/79477/)

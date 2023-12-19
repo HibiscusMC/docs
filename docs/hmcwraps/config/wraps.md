@@ -9,9 +9,13 @@ sidebar_position: 2
 Adding wraps is an extremely simple task in HMCWraps. You can use all the options from the [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item) except:
 
 - `id` now takes the custom model id or a [hook](https://docs.hibiscusmc.com/hmcwraps/hooks) of the wrap, which also applies when wrapping an item
+- `color` - The color of the wrap, either in hexadecimal or RGB
 - `actions` - Do something when the wrap gets wrapped, unwrapped or previewed. More on that here: [Actions](https://docs.hibiscusmc.com/hmcwraps/config/actions)
 - `wrap-name` - The name the item should have after being wrapped.
 - `wrap-lore` - The lore the item should have after being wrapped.
+- `wrap-nbt` - The NBT the item should have after being wrapped.
+- `wrap-flags` - The flags the item should have after being wrapped.
+- `wrap-durability` - The durability the item should have after being wrapped.
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:
@@ -45,7 +49,53 @@ However, if you don't want to change the whole item but just the lore and the di
 - `locked-name`
 - `locked-lore`
 
-Both of them can be configured regularily like `name` and `lore`.
+Both of them can be configured regularly like `name` and `lore`.
+
+### Armor Imitation
+The biggest pain in the industry is probably the fact that you can't apply wraps to armor other than leather. 
+However, HMCWraps has a solution for that!
+Configure your wrap as usual for the specific type, (e.g. `DIAMOND_HELMET`) and add the following option:
+
+`armor-imitation: true`
+
+Just remember, that any work you do in your resource pack (manager), has to be applied to the leather alternative,
+in this case `LEATHER_HELMET`.
+
+In order for this to function flawlessly, some inventories like crafting, enchanting and anvils have been disabled for imitated items.
+
+### Range
+To control which items should or should not have acces to that wrap more precisly, you can use ranges.
+
+Each criteria has two lists, which you can't use simultaneously: 
+
+`exclude` - Any item matching any of the entries won't have access to that wrap.
+
+`include` - Any item matching any of the entries will exclusively have access to that wrap. Items that don't match won't have access.
+
+Ranges have the following criteria:
+
+`model-id` - This checks for the model id. Use `-1` as the default model id.
+
+`color` - This checks for the color. Use `none` as no color.
+
+`oraxen` - This checks for the Oraxen id if available. You use the regular hook syntax without the `oraxen:` prefix.
+
+`itemsadder` - This checks for the ItemsAdder id if available. You use the regular hook syntax without the `itemsadder:` prefix.
+
+`mythic` - This checks for the Crucible id if available. You use the regular hook syntax without the `mythic:` prefix.
+
+#### Example
+
+```yaml
+range: 
+  model-id:
+    include:
+    - 22
+    - 23
+    - 24
+```
+Only items with the model id 22, 23 or 24 can be wrapped with that wrap.
+
 
 ### Physical Wraps
 
@@ -72,7 +122,7 @@ physical:
 ```
 
 ## Adding
-You have two options when adding wraps: 
+You have two options when adding wraps: (You can also use the command!)
 
 **A**: In the config.yml, there is an entry called `items`, where you can add wraps.
 
@@ -85,6 +135,7 @@ items: # Items entry in config.yml
     1: # Counter, this doesn't really matter, it just has to be different from other items in this list
       id: '1'
       uuid: 'fire_sword'
+      name: '<red>Fire Sword <gray>Wrap'
       physical:
         id: 'PAPER'
         name: '<red>Fire Sword <gray>Wrap'
@@ -101,11 +152,25 @@ items: # Items entry in fire_wraps.yml
     1: # Counter, this doesn't really matter, it just has to be different from other items in this list
       id: '1'
       uuid: 'fire_sword'
+      name: '<red>Fire Sword <gray>Wrap'
       physical:
         id: 'PAPER'
         name: '<red>Fire Sword <gray>Wrap'
         model-id: '2'
         keep-after-unwrap: true
+```
+
+Example C: `wraps/johndoe.yml` (with armor imitation enabled)
+```yaml
+enabled: true
+items:
+  DIAMOND_HELMET:
+    1: 
+      id: '1' # This has to be for the leather alternative, in this case LEATHER_HELMET
+      uuid: 'fire_sword'
+      name: '<blue>John Doe <gray>Wrap'
+      color: '#ff0000' # This too
+      armor-imitation: true # The important part
 ```
 
 > **Note**: Did you know that you can add as many wraps in a Wrap File as you want?

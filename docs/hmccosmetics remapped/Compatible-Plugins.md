@@ -28,7 +28,7 @@ sidebar_position: 5000
 
 ### [Eco](https://github.com/Auxilor/eco)
 
-`material: "eco:<item_lookup>"` See documentation [here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
+`material: eco:<item_lookup>` See documentation [here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
 
 ## Entity Integrations
 

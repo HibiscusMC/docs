@@ -105,6 +105,12 @@ items:
         unwrap-physical: {}
         # When the wrap is previewed
         preview: {}
+        # When the wrapped item is used to hit any entity including players
+        hit-any: {}
+        # When the wrapped item is used to hit an entity
+        hit-entity: {}
+        # When the wrapped item is used to hit a player
+        hit-player: {}
 ```
 
 Example B: `actions on an inventory item`

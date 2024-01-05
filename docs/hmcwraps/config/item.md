@@ -58,3 +58,9 @@ This is the most basic ConfigItem one could have, but there are many other optio
 
 `durability` - Set the current durability of an item. This can't exceed Minecraft's limit.
 - `durability: 20`
+
+`skull-owner` - Set the skull owner of an item. This is only applicable to items with the id `PLAYER_HEAD`.
+- `skull-owner: 'Skyslycer'`
+
+`skull-texture` - Set the skull texture of an item. This is only applicable to items with the id `PLAYER_HEAD`.
+- `skull-texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFiMTE0ZWJkNGViNmM2YTYyNWMyODhmMTYyY2RlZDQxZDhmODdjYjZhMGRmNjljN2Y4M2JhZDQ1YmY4YzYxYiJ9fX0='`

@@ -54,7 +54,9 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `rows` - How many rows the item should have
 - `target-item-slot` - Where the item the player was holding should be placed
 - `items` - All items and their slot
-- `shortcut` - Shortcut settings
+- `shortcut` - Shortcut settings (disable the shortcut by setting `enabled` to `false`)
+
+If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
 
 ## Example
 ```yaml

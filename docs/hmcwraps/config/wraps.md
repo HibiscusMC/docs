@@ -51,6 +51,15 @@ However, if you don't want to change the whole item but just the lore and the di
 
 Both of them can be configured regularly like `name` and `lore`.
 
+### Equipped options
+
+If you want to have the plugin display something else when the player has that wrap equipped, you can add the following stuff:
+
+`equipped-item` is just a [ConfigItem](https://docs.hibiscusmc.com/hmcwraps/config/item) which will be displayed.
+
+In case you want a PlaceholderAPI placeholder, you can use the following: `%hmcwraps_equipped_the_wrap_uuid%` (replace `the_wrap_uuid` with the uuid of the wrap).
+You can edit the output of that file in the `messages.properties`.
+
 ### Armor Imitation
 The biggest pain in the industry is probably the fact that you can't apply wraps to armor other than leather. 
 However, HMCWraps has a solution for that!

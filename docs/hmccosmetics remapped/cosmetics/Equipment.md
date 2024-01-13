@@ -52,6 +52,12 @@ lantern_cosmetic:
 
 `MAINHAND` Cosmetics items that go on your main hand. This is a cosmetic **NOT** recommend, but is still implemented if you so choose. This cosmetic has problems with being visually removed if a player moves to fast along there hotbar. 
 
+:::warning
+
+This cosmetic is no longer supported and is deprecated. Offhand cosmetics are more reliable and should be used instead. 
+
+:::
+
 ```yaml
 handypack:
   slot: MAINHAND

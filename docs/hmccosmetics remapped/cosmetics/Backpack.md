@@ -21,7 +21,7 @@ backpack:
 
 :::caution
 
-This section is currently work-in-progress, and will be completed as soon as possible.
+In 1.20.2, changes in the resource pack has made translations for items not go down as much as they used to. This can result in backpacks being unable to look correct for first person cosmetics. 
 
 :::
 
@@ -52,22 +52,3 @@ Following that, you need to go in Blockbench, and similarly to backpacks, you mu
 Sometimes, using only the translation settings, your model won't be able to go as low as you need it to. If that is the case, you can lower your model using the following trick:
 
 https://imgur.com/a/R6Bc50T
-
-### ModelEngine Backpack Cosmetics
-
-Similar to the Balloons Feature, you can also use the `model` key to create a ModelEngine Backpack.
-Example:
-```yaml
-meg_backpack:
-  slot: BACKPACK
-  permission: "hmccosmetics.meg_backpack"
-  show-lead: true
-  model: kite
-```
-
-:::caution
-
-Keep in mind that if you have an item set for the cosmetic, you will see both the item and the ModelEngine entity.
-Because of this, we recommend and defining the item in the menus file rather than setting one here.
-
-:::

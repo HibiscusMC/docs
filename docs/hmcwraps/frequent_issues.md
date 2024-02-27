@@ -38,6 +38,47 @@ This happens when the model you are using has scaled the display on a head to 0%
 
 If you wish, you can delete the scale entry entirely, but make sure to have a correct JSON format!
 
+## ItemsAdder Issues
+
+### Leather helmet not displaying the correct texture in HMCWraps
+This happens when using a similar configuration:
+```yaml
+  some_helmet:
+    display_name: Some Helmet
+    resource:
+      generate: true
+      material: LEATHER_HELMET
+      textures:
+        - some_helmet/some_helmet.png
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: some_helmet
+```
+This contains the `material` property. For some reason, this breaks using that texture in HMCWraps.
+Remove the `material` property to make it work. Your config should look like this now:
+```yaml
+  some_helmet:
+    display_name: Some Helmet
+    resource:
+      generate: true
+      textures:
+        - some_helmet/some_helmet.png
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: some_helmet
+```
+
+### Weird issues with textures (generally weird issues)
+ItemsAdder sometimes has very odd issues while having correct configurations in both IA and HMCWraps.
+So collections might not work correctly or only sometimes. In order to try to fix some weird issues you can do the following:
+- run `/iacleancache`
+- rezip your resource pack
+
+If your issue persists, double-check your configs, check the other solutions to issues on this page and as a last resort, 
+create a ticket in our [Discord server](https://discord.gg/pcm8kWrdNt).
+
 ## I added a wrap from Oraxen, ItemsAdder or Crucible but when I try to wrap an item it doesn't show up/only works for one material type!
 
 This sadly is a Minecraft limitation and not something HMCWraps can influence: When you are using the [collections feature](https://docs.hibiscusmc.com/hmcwraps/config/collections), the texture pack has to contain a texture for each material/item type in the collection.

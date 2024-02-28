@@ -55,6 +55,8 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `target-item-slot` - Where the item the player was holding should be placed
 - `items` - All items and their slot
 - `shortcut` - Shortcut settings (disable the shortcut by setting `enabled` to `false`)
+- `item-change-enabled` - If the player should be able to switch the wrapping item in the inventory.
+- `open-without-item-enabled` - If the player should be able to open the wraps inventory with the command while not holding any item.
 
 If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
 
@@ -78,6 +80,12 @@ inventory:
     exclude: 
       - SHIELD
       - BOW
+  # If the player should be able to switch the wrapping item in the inventory.
+  # When enabled, the inventory won't close after wrapping or unwrapping.
+  item-change-enabled: true
+  # If the player should be able to open the wraps inventory with the command while not holding any item.
+  # The inventory won't be filled. If the option above is enabled, the player can then click the item to wrap.
+  open-without-item-enabled: false
   # Actions that should be run when the user clicks a wrap
   actions:
     left:

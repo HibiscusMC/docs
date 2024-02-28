@@ -44,6 +44,10 @@ HMCWraps has a fairly simple permission system. Each command has its own permiss
 - Management
 - Virtual
 
+`hmcwraps.commands.wrap.self` - Gives access to wrap an item using commands (virtual). The player can only wrap his own tools, not the tools from others.
+
+`hmcwraps.commands.unwrap.self` - Gives access to unwrap an item using commands (virtual). The player can only unwrap his own tools, not the tools from others.
+
 `hmcwraps.commands.give.wrapper` - Gives access to the give wrapper command
 - Admin
 - Management

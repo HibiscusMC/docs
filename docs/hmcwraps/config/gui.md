@@ -57,8 +57,22 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `shortcut` - Shortcut settings (disable the shortcut by setting `enabled` to `false`)
 - `item-change-enabled` - If the player should be able to switch the wrapping item in the inventory.
 - `open-without-item-enabled` - If the player should be able to open the wraps inventory with the command while not holding any item.
+- `no-item-title` - (This option is not included by default, but you can add it to your config)
+This the title that shows when the option above is enabled and the player opens it while not holding an item.
 
 If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
+
+### No item options
+When `open-without-item-enabled` is set to `true`, one might want to show a different menu.
+This can be achieved by using the `n` and `w` slot options.
+
+If you, for example, want to only show an item configured when the player isn't holding a wrappable item,
+you can append `n` to the slot number. (Example: `45` -> `45n`)
+
+If you, on the other hand, want to only show an item configured when the player is holding a wrappable item,
+you can append `w` to the slot number. (Example: `45` -> `45w`)
+
+If you want the item to show in both cases, you can just use the normal slot number. (Example: `45`)
 
 ## Example
 ```yaml

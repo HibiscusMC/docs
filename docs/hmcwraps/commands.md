@@ -47,7 +47,9 @@ with the specified UUID. Existing files will be appended.
 
 `/wraps debug wrap <wrap uuid> [-upload]` - Shows (and uploads) a specified wrap.
 
-`/wraps debug player <player> [-upload]` - Shows (and uploads) information about a player and the item the player is holding.
+`/wraps debug player [player] [-upload]` - Shows (and uploads) information about a player and the item the player is holding.
+
+`/wraps debug item [player] [-upload]` - Shows (and uploads) information about the item the player is holding.
 
 `/wraps debug log [log file name]` - Uploads a server log. If no log file is specified, latest.log will be uploaded.
 

@@ -20,8 +20,10 @@ sidebar_position: 2
 
 `/wraps convert [confirm]` - Start the ItemSkins convert process
 
-`/wraps create <file> <wrap uuid>` - Create a new wrap in the specified file from the item you're holding
+`/wraps create <file> <wrap uuid> [collection]` - Create a new wrap in the specified file from the item you're holding
 with the specified UUID. Existing files will be appended.
+
+`/wraps open <player>` - Open the wraps inventory for another player.
 
 `/wraps list` - List all currently loaded wraps and collections
 

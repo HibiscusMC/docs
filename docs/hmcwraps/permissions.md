@@ -30,6 +30,10 @@ HMCWraps has a fairly simple permission system. Each command has its own permiss
 - Admin
 - Management
 
+`hmcwraps.commands.open` - Gives access to open the wrap inventory for another player.
+- Admin
+- Management
+
 `hmcwraps.commands.list` - Gives access to the list command
 - Admin
 - Management

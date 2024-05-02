@@ -78,3 +78,22 @@ You can also check the included cosmetics for a point of reference.
 This is because you have entered the creative mode. Creative modes accept anything a client says it has, meaning, when HMCC sends fake items, creative mode turns them into real items. This only affects `HATS`, `CHESTPLATE`, `LEGGINGS`, and `BOOTS` cosmetics. 
 
 You can attempt to fix this by turning `cosmetic-settings.destroy-loose-cosmetics` to true, which will attempt to destroy these items when they are found. 
+
+---
+
+## I equip a balloon and just have a lead
+
+This could be any number of problems. The most common is blocking all entities from spawning, check all your plugins and WorldGuard regions (Balloons are actual entities, the lead and backpacks are all packets which means they can be seen even if a region doesn't allow entities to be spawned). 
+
+Checklist:
+- Check console for any stack trace errors. 
+- Check plugins for any that could stop spawning of armorstands
+- Check WorldGuard regions
+- If using Model Engine, ensure the model is correct (If it's an invalid model, it'll shoot an invalid model error in the console)
+- If using items, ensure that the item is correctly placed into the resource pack (and that HMCCosmetics is pointing to the direct Custom Model Data)
+
+---
+
+## The issue is fixed on GitHub, but not on my version?
+
+Releases come out periodically when changes are stable enough to be pushed to servers. If there is a fix you want early, dev builds are available for free for all buyers of HMCCosmetics. Just verify your purchase on the [Discord](https://discord.gg/pcm8kWrdNt) and head to the HMCCosmetics channel. 

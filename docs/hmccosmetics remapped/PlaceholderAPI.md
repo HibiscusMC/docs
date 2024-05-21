@@ -14,4 +14,8 @@ sidebar_position: 7000
 
 `%hmccosmetics_equipped_<slot>%` - Returns `true` or `false` depending if a player has a cosmetic equipped in a slot
 
+`%hmccosmetics_amount_<slot>%` - Returns the amount of cosmetics in a slot. Not specifying a slot will return the total amount of all cosmetics. 
+
+`%hmccosmetics_amount_<slot>_unlocked%` - Returns the amount of cosmetics a player has unlocked in a slot. 
+
 `%hmccosmetics_wardrobe-enabled%` - Returns if the player is currently inside of the wardrobe

@@ -28,6 +28,35 @@ This closes the current menu.
         - "[CLOSE]"
 ```
 
+### Equip
+
+This equips a cosmetic. Highly recommend to use the cosmetic item type, as it will account for if a player already has it equipped, unequipping said cosmetic. 
+
+```
+    actions:
+      any:
+        - "[EQUIP] explorer_backpack"
+```
+
+### Unequip
+
+This unequips in a certain cosmetic slot. 
+
+```
+    actions:
+      any:
+        - "[UNEQUIP] OFF_HAND"
+```
+
+You can chain multiple to unequip multiple cosmetics:
+
+```
+    actions:
+      any:
+        - "[UNEQUIP] OFF_HAND"
+	- "[UNEQUIP] CHESTPLATE"
+```
+
 ### Player Command
 
 Sends a command as the player who clicked it

@@ -32,7 +32,7 @@ sidebar_position: 5000
 
 ## Entity Integrations
 
-### [ModelEngine 4](https://www.spigotmc.org/resources/79477/)
+### [ModelEngine 4](https://mythiccraft.io/index.php?resources/model-engine%E2%80%94ultimate-entity-model-manager-1-19-4-1-20-4.1213/)
 
 `model: <modelId>`
 

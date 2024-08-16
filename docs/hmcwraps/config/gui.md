@@ -58,9 +58,25 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `item-change-enabled` - If the player should be able to switch the wrapping item in the inventory.
 - `open-without-item-enabled` - If the player should be able to open the wraps inventory with the command while not holding any item.
 - `no-item-title` - (This option is not included by default, but you can add it to your config)
+- `sort-order` - The order in which the wraps in the inventory will be sorted.
 This the title that shows when the option above is enabled and the player opens it while not holding an item.
 
 If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
+
+### Sort order
+You can define a specific sorting order in which the wraps in the GUI are sorted. The default configuration looks as follows:
+
+```yaml
+  # The sort order by which the wraps in the inventory will be sorted
+  sort-order:
+    - 'PERMISSION' # The items the player has access to will be shown first
+    - 'SORT_ID' # You can define a sort id on a wrap, lower numbers will be shown first. Example: 'sort: 3'
+    - 'MODEL_ID' # Sorted by model id, lower numbers will be shown first
+```
+
+It is pretty self explanatory. The `PERMISSION` entry sorty by if the players has permission to use that wrap. The wraps the player has access to are shown first. In the next layer, all items with the same sort from the previous layer are sorted with the `SORT_ID`. This is an id you can define for each wrap to have some wraps show up wherever you want. Check the [wrap configuration](https://docs.hibiscusmc.com/hmcwraps/config/wraps) for more information. Last but not least, the wraps get sorted by the custom model data. The lower the number the higher is the position. So a wrap with a model id of 20 will be shown before one with a model id of 90.
+
+You can move and remove any of these as you want to alter the sorting process.
 
 ### No item options
 When `open-without-item-enabled` is set to `true`, one might want to show a different menu.

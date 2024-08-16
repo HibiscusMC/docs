@@ -27,7 +27,8 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 - `wrap-durability` - The durability the item should have after being wrapped.
 - `range` - Settings to include or exclude certain items from being wrapped with this wrap. Check below for more details.
 - `sort` - The sort id for the [sort order](https://docs.hibiscusmc.com/hmcwraps/config/gui#sort-order). The lower the number the higher the priority.
-- `upside-down-preview` - If the preview should be upside down or not. Because of the default preview rotation, this is only useful for items that are not rotated by 180 degrees, for example helmets. This will only affect the `FlOATING` preview.
+- `upside-down-preview` - If the preview should be upside down or not. Because of the default preview rotation, this is only useful for items that are not rotated by 180 degrees. This will only affect the `FlOATING` preview.
+- `apply-name-only-empty` - If the wrap name should only be applied if the original item name is the default one and not customized. If the item is then renamed while it is wrapped, the name will persist instead of the original one being reapplied.
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:

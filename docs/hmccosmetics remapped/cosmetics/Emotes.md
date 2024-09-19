@@ -7,11 +7,11 @@ sidebar_position: 5000
 
 :::warning
 
+This is a **deprecated** feature that is scheduled for removal in future versions. 
+
+Emotes don't work on any version that's newer than 1.20.2. 
+
 1.19.4 introduces problems with the shader that is used for emotes. Using the shader renders the player's head block improperly. See [here](https://docs.hibiscusmc.com/hmccosmetics%20remapped/FAQ#player-skins--heads-messed-up) on how to remove the shader from your resource pack. 
-
-The backend library for emotes has not been updated. Emotes will not work on 1.20.2+
-
-Emotes are a deprecated feature and is scheduled for removal in future versions. 
 
 :::
 

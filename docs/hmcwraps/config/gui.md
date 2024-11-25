@@ -57,9 +57,10 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `shortcut` - Shortcut settings (disable the shortcut by setting `enabled` to `false`)
 - `item-change-enabled` - If the player should be able to switch the wrapping item in the inventory.
 - `open-without-item-enabled` - If the player should be able to open the wraps inventory with the command while not holding any item.
-- `no-item-title` - (This option is not included by default, but you can add it to your config)
+- `no-item-title` - This the title that shows when the option above is enabled and the player opens it while not holding an item. (This option is not included by default, but you can add it to your config)
 - `sort-order` - The order in which the wraps in the inventory will be sorted.
-This the title that shows when the option above is enabled and the player opens it while not holding an item.
+- `actions` - Default actions on each wrap for which the player has permission 
+- `locked-actions` - Default actions for all wraps where the player doesn't have the right permissions
 
 If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
 
@@ -121,6 +122,11 @@ inventory:
     left:
       WRAP:
         - ''
+    right:
+      PREVIEW:
+        - ''
+  # Executed when clicking a wrap the player doesn't have permission for
+  locked-actions:
     right:
       PREVIEW:
         - ''

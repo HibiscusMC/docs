@@ -13,6 +13,13 @@ Item hooks will get the item type, the custom model data and the color and apply
 id: itemsadder:<namespace>:<item_name>
 ```
 
+## [Nexo](https://docs.nexomc.com)
+
+```yaml
+# The Bukkit material or hook
+id: nexo:<item_name>
+```
+
 ## [Oraxen](https://www.spigotmc.org/resources/%E2%80%8D✅-25-☄%EF%B8%8F-oraxen-add-items-blocks-armors-hats-food-furnitures-plants-and-gui.72448/)
 
 ```yaml

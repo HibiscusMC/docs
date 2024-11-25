@@ -17,10 +17,15 @@ Add the resource pack to your server using server.properties
 The plugin has native support for ItemsAdder to replace certain items by the ones ItemsAdder provides.
 The plugin supports putting the key (e.g. `itemsadder:tree:apple`) in any `id` field of any item.
 
+## Nexo
+
+Just like ItemsAdder, HMCWraps has native support for Nexo to replace items with Nexo items.
+The plugin supports putting the key (e.g. `nexo:apple`) in any `id` field of any item.
+
 ## Oraxen
 
-Just like ItemsAdder, HMCWraps has native support for Oraxen to replace items with Oraxen items.
-The plugin supports putting the key (e.g. `oraxen:apple`) in any `id` field of y item.
+Similarily to Nexo and ItemsAdder, HMCWraps has native support for Oraxen to replace items with Oraxen items.
+The plugin supports putting the key (e.g. `oraxen:apple`) in any `id` field of any item.
 
 ## Post Installation
 

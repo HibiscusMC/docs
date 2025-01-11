@@ -30,7 +30,9 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 - `upside-down-preview` - If the preview should be upside down or not. Because of the default preview rotation, this is only useful for items that are not rotated by 180 degrees. This will only affect the `FlOATING` preview.
 - `apply-name-only-empty` - If the wrap name should only be applied if the original item name is the default one and not customized. If the item is then renamed while it is wrapped, the name will persist instead of the original one being reapplied.
 - `equippable-slot` - The slot for the model as per the [data component](https://minecraft.wiki/w/Data_component_format/equippable)
-- `equippable-model` - The model name (asset id) for the model as per the [data component](https://minecraft.wiki/w/Data_component_format/equippable) 
+- `equippable-model` - The model name (asset id) for the model as per the [data component](https://minecraft.wiki/w/Data_component_format/equippable)
+- `glint-override` - When `true`, makes the wrapped item glint, even without enchantments. When `false`, forces the wrapped item to not glint, even with enchantments.
+- `remove-trim` - When `true`, removes the item's trim while wrapping, which is reapplied while unwrapping. This is useful for wraps where the trim might disturb the texture of the armor.
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:

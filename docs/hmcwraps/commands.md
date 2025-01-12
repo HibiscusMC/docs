@@ -41,17 +41,19 @@ with the specified UUID. Existing files will be appended.
 
 # Debug Commands
 
-`/wraps debug info [-upload]` - Shows (and uploads) plugin and server information.
+Debug prints are uploaded by default. To not upload them add the specified `-noupload` flag.
 
-`/wraps debug config [-upload]` - Shows (and uploads) the plugin configuration.
+`/wraps debug info [-noupload]` - Shows (and uploads) plugin and server information.
 
-`/wraps debug wraps [-upload]` - Shows (and uploads) a list of wraps.
+`/wraps debug config [-noupload]` - Shows (and uploads) the plugin configuration.
 
-`/wraps debug wrap <wrap uuid> [-upload]` - Shows (and uploads) a specified wrap.
+`/wraps debug wraps [-noupload]` - Shows (and uploads) a list of wraps.
 
-`/wraps debug player [player] [-upload]` - Shows (and uploads) information about a player and the item the player is holding.
+`/wraps debug wrap <wrap uuid> [-noupload]` - Shows (and uploads) a specified wrap.
 
-`/wraps debug item [player] [-upload]` - Shows (and uploads) information about the item the player is holding.
+`/wraps debug player [player] [-noupload]` - Shows (and uploads) information about a player and the item the player is holding.
+
+`/wraps debug item [player] [-noupload]` - Shows (and uploads) information about the item the player is holding.
 
 `/wraps debug log [log file name]` - Uploads a server log. If no log file is specified, latest.log will be uploaded.
 

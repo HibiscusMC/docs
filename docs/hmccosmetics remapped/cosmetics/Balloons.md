@@ -11,6 +11,7 @@ kite:
   slot: BALLOON
   permission: "hmccosmetics.kite"
   model: kite
+  show-lead: true # If this is not here, it'll default to true. 
   item: # Because this relies on a model, the item here is only useful if you add it to a GUI. 
     material: PAPER
     model-data: 7

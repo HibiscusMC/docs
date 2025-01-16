@@ -11,7 +11,11 @@ kite:
   slot: BALLOON
   permission: "hmccosmetics.kite"
   model: kite
-  show-lead: true # If this is not here, it'll default to true. 
+  show-lead: true # If this is not here, it'll default to true.
+  balloon-offset: # If this is not here, it'll default to what's found in the config
+    x: 0.5
+    y: 3
+    z: 0.5
   item: # Because this relies on a model, the item here is only useful if you add it to a GUI. 
     material: PAPER
     model-data: 7

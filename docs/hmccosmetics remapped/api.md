@@ -85,3 +85,7 @@ You can get a CosmeticUser with:
 ```java
 CosmeticUser user = HMCCosmeticsAPI.getUser(playerUnqiueId);
 ```
+
+### Cosmetic User Provider
+
+Accordingly, you can set a CosmeticUser provider to provide your own logic for providing your own CosmeticUsers. You can see an example found in [#160](https://github.com/HibiscusMC/HMCCosmetics/pull/160). 

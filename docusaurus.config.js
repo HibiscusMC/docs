@@ -96,6 +96,15 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java', 'groovy'],
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'TBS9KQC81X',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '55359bcc1c52b8c4f012fe6dee410f22',
+  
+        indexName: 'indexName: "hibiscusmc",',
+      },
     }),
 };
 

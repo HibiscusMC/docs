@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # Hooks
 
-Item hooks will get the item type, the custom model data and the color and apply use that. No NBT data is being copied.
+Item hooks will get the item type, the custom model data, color, trim, equippable and item model and apply use that. No NBT data is being copied.
+
+The hooks copy almost the entire item for the wrap inventory and for the wrapper/unwrapper items, but you are able to overwrite them with the properties within HMCWraps.
 
 ## [ItemsAdder](https://www.spigotmc.org/resources/✨itemsadder⭐emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/)
 

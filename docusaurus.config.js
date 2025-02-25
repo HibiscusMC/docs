@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -92,9 +93,16 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Hibiscus Studios. Built with ♥️ using Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
         additionalLanguages: ['java', 'groovy'],
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'TBS9KQC81X',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '55359bcc1c52b8c4f012fe6dee410f22',
+  
+        indexName: 'hibiscusmc',
       },
     }),
 };

@@ -16,7 +16,7 @@ sidebar_position: 1000
 
 `/cosmetic setwardrobesetting <wardrobe> <setting>` - (hmccosmetics.cmd.setwardrobesetting) - Sets wardrobe positions. `<setting>` can be `leavelocation`, `viewerlocation`, `wardrobelocation`, `permission`, `distance`. 
 
-`/cosmetic wardrobe <wardrobe>` - (hmccosmetics.cmd.wardrobe) - Open the wardrobe.
+`/cosmetic wardrobe <wardrobe>` - (hmccosmetics.cmd.wardrobe) - Open the wardrobe. This is just the command to open a wardrobe, wardrobes may have an additional permission. Check the configuration for the permission that is set for each wardrobe setup. 
 
 `/cosmetic dataclear <USERNAME>` - (hmccosmetics.cmd.dataclear) - Clears a player data from your database. Only useful if a player is offline.
 

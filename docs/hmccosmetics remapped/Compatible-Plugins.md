@@ -6,6 +6,10 @@ sidebar_position: 5000
 
 ## Item Integrations
 
+### [Nexo](https://polymart.org/resource/nexo.6901)
+
+`material: nexo:<itemid>`
+
 ### [Oraxen](https://www.spigotmc.org/resources/72448/)
 
 `material: oraxen:<my_oraxen_item>`

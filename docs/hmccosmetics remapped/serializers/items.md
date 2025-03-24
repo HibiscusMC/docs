@@ -24,6 +24,11 @@ Lore is names on the bottom of the item. It must use [MiniMessage](https://docs.
 
 Model Data is the model that the item will use. This requires a resource pack to work properly. If you have another items plugin handling Model Data, then it's recommend to get the item in materials. 
 
+### Model ID
+
+Model ID is the id of the model that the item will show. This requires a resource pack to work properly. 
+
+
 ### Amount
 
 The amount of an item to show.
@@ -86,6 +91,7 @@ lore:
   - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_beanie%"
   - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_beanie%"
 model-data: 4
+model-id: "minecraft:diamond"
 amount: 2
 unbreakable: true
 glowing: true

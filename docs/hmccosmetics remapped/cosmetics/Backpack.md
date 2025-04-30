@@ -9,7 +9,7 @@ sidebar_position: 2000
 backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack"
-  show-lead: true
+  height: 5
   item:
     material: PAPER
     model-data: 4

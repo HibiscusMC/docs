@@ -42,6 +42,10 @@ PlaceholderAPI Placeholders can be used in item names & lore.
 
 List of (most) PAPI Placeholders: https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders
 
+## [ExecutableItems](https://www.spigotmc.org/resources/custom-items-plugin-executable-items.77578/)
+
+Using EI as an item hook is currently unsupported as it doesn't provide texture information and the features of the items currently can't be transferred to wraps. Otherwise you are able to use the EI hook in [global disables](https://docs.hibiscusmc.com/hmcwraps/config/global_disable/) and [ranges](https://docs.hibiscusmc.com/hmcwraps/config/wraps/#range) to prevent players from wrapping EI items. Simply use the `executable-items` key.
+
 ### Placeholders provided by HMCWraps
 Please replace `<uuid>` with a valid uuid of a wrap.
 

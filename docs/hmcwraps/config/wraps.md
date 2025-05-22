@@ -116,6 +116,10 @@ Ranges have the following criteria:
 
 `mythic` - This checks for the Crucible id if available. You use the regular hook syntax without the `mythic:` prefix.
 
+`nexo` - This checks for the Oraxen id if available. You use the regular hook syntax without the `nexo:` prefix.
+
+`executable-items` - This checks for the ExecutableItems id if available.
+
 #### Example
 
 ```yaml

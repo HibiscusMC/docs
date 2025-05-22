@@ -20,6 +20,10 @@ There are 5 possible ways to exclude:
 
 `mythic` - Any Crucible id in this list will not be able to be wrapped. You use the regular hook syntax without the `mythic:` prefix.
 
+`nexo` - Any Nexo id in this list will not be able to be wrapped. You use the regular hook syntax without the `nexo:` prefix.
+
+`executable-items` - Any ExecutableItems id in this list will not be able to be wrapped.
+
 ## Example
 ```yaml
 # Items with these properties can't be wrapped
@@ -34,4 +38,6 @@ global-disable:
   oraxen: [ ]
   itemsadder: [ ]
   mythic: []
+  nexo: []
+  executable-items: []
 ```

@@ -111,6 +111,16 @@ items:
         hit-entity: {}
         # When the wrapped item is used to hit a player
         hit-player: {}
+        # When the player presses any mouse button
+        interact: {}
+        # When a block is clicked with the left button
+        interact-left-block: {}
+        # When a block is clicked with the right button
+        interact-right-block: {}
+        # When nothing is clicked with the left button
+        interact-left-air: {}
+        # When nothing is clicked with the right button
+        interact-right-air: {}
 ```
 
 Example B: `actions on an inventory item`
@@ -129,4 +139,18 @@ inventory:
         left: {}
         # When the item is clicked using the right mouse button
         right: {}
+```
+
+Example C: `actions on a physical wrapper`
+```yaml
+items:
+  SOME_COLLECTION:
+    cool_wrap:
+      id: 'nexo:cool_wrap'
+      physical:
+        id: 'nexo:cool_wrap_wrapper'
+        actions:
+          interact-right-air: # This previews the wrap when air is right-clicked with the phyiscal wrappper
+            PREVIEW:
+            - ''
 ```

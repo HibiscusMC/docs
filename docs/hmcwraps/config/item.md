@@ -53,6 +53,9 @@ This is the most basic ConfigItem one could have, but there are many other optio
 - `color: '#ff0000'`
 - `color: '255,0,0'`
 
+`tooltip-style` - The namespaced key for the tooltip style of the item. This will show in the wrap inventory and on physical wrappers if applied there.
+- `tooltip-style: 'nexo:verycooltooltip'`
+
 `nbt` - Apply an NBT to an item. This strictly follows Minecraft's container based approach.
 - `nbt: '{publicBukkitValues:{somePlugin:{someValue:"sus"}}}'`
 

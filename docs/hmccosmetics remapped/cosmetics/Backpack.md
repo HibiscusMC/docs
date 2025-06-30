@@ -9,7 +9,6 @@ sidebar_position: 2000
 backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack"
-  height: 5
   item:
     material: PAPER
     model-data: 4
@@ -33,6 +32,7 @@ Cosmetic Configuration:
 backpack:
   slot: BACKPACK
   permission: "hmccosmetics.backpack"
+  height: 5 
   item:
     material: PAPER
     model-data: 4

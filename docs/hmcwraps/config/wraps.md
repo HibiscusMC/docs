@@ -168,15 +168,16 @@ Example A: `config.yml`
 ```yaml
 items: # Items entry in config.yml
   DIAMOND_SWORD: # Where the wrap should be applicable. Either a material or a collection
-    1: # Counter, this doesn't really matter, it just has to be different from other items in this list
-      id: '1'
-      uuid: 'fire_sword'
-      name: '<red>Fire Sword <gray>Wrap'
-      physical:
-        id: 'PAPER'
+    wraps:
+      1: # Counter, this doesn't really matter, it just has to be   different from other items in this list
+        id: '1'
+        uuid: 'fire_sword'
         name: '<red>Fire Sword <gray>Wrap'
-        model-id: '2'
-        keep-after-unwrap: true
+        physical:
+          id: 'PAPER'
+          name: '<red>Fire Sword <gray>Wrap'
+          model-id: '2'
+          keep-after-unwrap: true
 ```
 
 Example B: `wraps/fire_wraps.yml`
@@ -185,15 +186,16 @@ Example B: `wraps/fire_wraps.yml`
 enabled: true
 items: # Items entry in fire_wraps.yml
   DIAMOND_SWORD: # Where the wrap should be applicable. Either a material or a collection
-    1: # Counter, this doesn't really matter, it just has to be different from other items in this list
-      id: '1'
-      uuid: 'fire_sword'
-      name: '<red>Fire Sword <gray>Wrap'
-      physical:
-        id: 'PAPER'
+    wraps:
+      1: # Counter, this doesn't really matter, it just has to be different from other items in this list
+        id: '1'
+        uuid: 'fire_sword'
         name: '<red>Fire Sword <gray>Wrap'
-        model-id: '2'
-        keep-after-unwrap: true
+        physical:
+          id: 'PAPER'
+          name: '<red>Fire Sword <gray>Wrap'
+          model-id: '2'
+          keep-after-unwrap: true
 ```
 
 Example C: `wraps/johndoe.yml` (with armor imitation enabled)
@@ -201,12 +203,13 @@ Example C: `wraps/johndoe.yml` (with armor imitation enabled)
 enabled: true
 items:
   DIAMOND_HELMET:
-    1: 
-      id: '1' # This has to be for the leather alternative, in this case LEATHER_HELMET
-      uuid: 'fire_sword'
-      name: '<blue>John Doe <gray>Wrap'
-      color: '#ff0000' # This too
-      armor-imitation: true # The important part
+    wraps:
+      1: 
+        id: '1' # This has to be for the leather alternative, in this case LEATHER_HELMET
+        uuid: 'fire_sword'
+        name: '<blue>John Doe <gray>Wrap'
+        color: '#ff0000' # This too
+        armor-imitation: true # The important part
 ```
 
 > **Note**: Did you know that you can add as many wraps in a Wrap File as you want?

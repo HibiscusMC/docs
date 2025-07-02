@@ -26,6 +26,10 @@ sidebar_position: 5000
 
 `material: mmoitems:<type>:<itemid>`
 
+### [CraftEngine](https://github.com/Xiao-MoMi/craft-engine)
+
+`material: craftengine:<id>:<itemid>`
+
 ### [Denizen](https://www.spigotmc.org/resources/21039/)
 
 `material: denizen:<denizen_script_item>` See example [here](https://github.com/HibiscusMC/HMCCosmetics/pull/99)

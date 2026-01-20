@@ -38,6 +38,16 @@ This equips a cosmetic. Highly recommend to use the cosmetic item type, as it wi
         - "[EQUIP] explorer_backpack"
 ```
 
+### Equip Random
+
+This randomly equips a cosmetic within a slot and is able to be equipped by a player
+
+```
+    actions:
+      any:
+        - "[EQUIP-RANDOM] BALLOON" 
+```
+
 ### Unequip
 
 This unequips in a certain cosmetic slot. 
@@ -54,7 +64,7 @@ You can chain multiple to unequip multiple cosmetics:
     actions:
       any:
         - "[UNEQUIP] OFF_HAND"
-	- "[UNEQUIP] CHESTPLATE"
+	    - "[UNEQUIP] CHESTPLATE"
 ```
 
 ### Player Command

@@ -7,6 +7,10 @@ If you are a developer and want to create an addon or extension, you can use the
 The most useful source of information are the [JavaDocs](https://hibiscusmc.github.io/HMCWraps/), but you can just ask the developer in our [Discord server](https://discord.gg/pcm8kWrdNt). 
 
 ## Build Tool
+Replace the placeholder version `1.0.0` with the current version: 
+
+![hmcwraps version](https://repo.hibiscusmc.com/api/badge/latest/releases/de/skyslycer/hmcwraps/api/?color=40c14a&name=HMCWraps&prefix=v)
+
 ### Gradle Kotlin
 ```groovy
 repositories {
@@ -99,7 +103,7 @@ public class ItemWrapListener implements Listener {
 public class SomePlugin extends JavaPlugin {
     
     public void onEnable() {
-        Bukkit.getPluginManager().registerEvents(new ItemWrapListener());
+        Bukkit.getPluginManager().registerEvents(new ItemWrapListener(), this);
     }
 
 }

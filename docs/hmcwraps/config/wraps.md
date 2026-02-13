@@ -24,7 +24,7 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 - `wrap-lore` - The lore the item should have after being wrapped.
 - `wrap-nbt` - The NBT the item should have after being wrapped.
 - `wrap-flags` - The flags the item should have after being wrapped.
-- `wrap-durability` - The durability the item should have after being wrapped.
+- `wrap-durability` - The durability the item should have after being wrapped. Set to `-1` to not modify current durability when using Armor Imitation.
 - `range` - Settings to include or exclude certain items from being wrapped with this wrap. Check below for more details.
 - `sort` - The sort id for the [sort order](https://docs.hibiscusmc.com/hmcwraps/config/gui#sort-order). The lower the number the higher the priority.
 - `upside-down-preview` - If the preview should be upside down or not. Because of the default preview rotation, this is only useful for items that are not rotated by 180 degrees. This will only affect the `FlOATING` preview.
@@ -34,6 +34,9 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 - `item-model` - The model path for the [item model](https://minecraft.wiki/w/Data_component_format/item_model)
 - `glint-override` - When `true`, makes the wrapped item glint, even without enchantments. When `false`, forces the wrapped item to not glint, even with enchantments.
 - `remove-trim` - When `true`, removes the item's trim while wrapping, which is reapplied while unwrapping. This is useful for wraps where the trim might disturb the texture of the armor.
+- `wrap-tooltip-style` - Namespaced key to set the tooltip style of the wrapped item
+- `wrap-lore-type` - If you don't want the wrap lore to overwrite the existing lore, you can either use `PREPEND` and `APPEND` to put the new lore either before or after the existing lore. Note that placeholders can't be used in the lore if this option is in use.
+- `use-original-mechanic` - When using Nexo, enabling this would cause HMCWraps to not change the Nexo ID of the item. This makes the wrapped item use the mechanics of the original item. If this is disabled, the mechanics of the wrap are used.
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:
@@ -169,9 +172,8 @@ Example A: `config.yml`
 items: # Items entry in config.yml
   DIAMOND_SWORD: # Where the wrap should be applicable. Either a material or a collection
     wraps:
-      1: # Counter, this doesn't really matter, it just has to be   different from other items in this list
+      fire_sword:
         id: '1'
-        uuid: 'fire_sword'
         name: '<red>Fire Sword <gray>Wrap'
         physical:
           id: 'PAPER'
@@ -187,9 +189,8 @@ enabled: true
 items: # Items entry in fire_wraps.yml
   DIAMOND_SWORD: # Where the wrap should be applicable. Either a material or a collection
     wraps:
-      1: # Counter, this doesn't really matter, it just has to be different from other items in this list
+      fire_sword:
         id: '1'
-        uuid: 'fire_sword'
         name: '<red>Fire Sword <gray>Wrap'
         physical:
           id: 'PAPER'
@@ -204,9 +205,8 @@ enabled: true
 items:
   DIAMOND_HELMET:
     wraps:
-      1: 
+      fire_sword: 
         id: '1' # This has to be for the leather alternative, in this case LEATHER_HELMET
-        uuid: 'fire_sword'
         name: '<blue>John Doe <gray>Wrap'
         color: '#ff0000' # This too
         armor-imitation: true # The important part

@@ -14,7 +14,7 @@ sidebar_position: 2
 
 `/wraps wrap <wrap uuid> [player] {actions}` - Wrap the item the player is holding
 
-`/wraps unwrap <wrap uuid> {actions}` - Unwrap the item the player is holding
+`/wraps unwrap [player] {actions}` - Unwrap the item the player is holding
 
 `/wraps preview <wrap uuid> [player] {actions}` - Start a preview of the wrap for a user
 
@@ -24,6 +24,8 @@ sidebar_position: 2
 with the specified UUID. Existing files will be appended.
 
 `/wraps open <player>` - Open the wraps inventory for another player.
+
+`/wraps drop <wrap uuid> <x> <y> <z> <world> [amount]`
 
 `/wraps list` - List all currently loaded wraps and collections
 

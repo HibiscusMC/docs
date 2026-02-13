@@ -69,3 +69,6 @@ HMCWraps has a fairly simple permission system. Each command has its own permiss
 - Admin
 
 `hmcwraps.shortcut.disable` - If this permission is applied to a player, the shortcut function is disabled only for that player.
+
+`hmcwraps.commands.open` - Gives access to the drop command
+- Admin

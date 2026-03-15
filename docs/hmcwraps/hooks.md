@@ -22,6 +22,13 @@ id: itemsadder:<namespace>:<item_name>
 id: nexo:<item_name>
 ```
 
+## [CraftEngine](https://modrinth.com/plugin/craftengine)
+
+```yaml
+# The Bukkit material or hook
+id: craftengine:<item_name>
+```
+
 ## [Oraxen](https://www.spigotmc.org/resources/%E2%80%8D✅-25-☄%EF%B8%8F-oraxen-add-items-blocks-armors-hats-food-furnitures-plants-and-gui.72448/)
 
 ```yaml
@@ -46,7 +53,11 @@ List of (most) PAPI Placeholders: https://github.com/PlaceholderAPI/PlaceholderA
 
 Using EI as an item hook is currently unsupported as it doesn't provide texture information and the features of the items currently can't be transferred to wraps. Otherwise you are able to use the EI hook in [global disables](https://docs.hibiscusmc.com/hmcwraps/config/global_disable/) and [ranges](https://docs.hibiscusmc.com/hmcwraps/config/wraps/#range) to prevent players from wrapping EI items. Simply use the `executable-items` key.
 
-### Placeholders provided by HMCWraps
+## [ZAuctionHouse](https://www.spigotmc.org/resources/zauctionhouse.63010/), [AuctionGUI+](https://www.spigotmc.org/resources/auctiongui-1-8-1-21.19015/), [AxAuctions](https://www.spigotmc.org/resources/axauctions-all-in-one-auction-house-plugin.115308/), [AxTrade](https://www.spigotmc.org/resources/axtrade-the-ultimate-trade-plugin.116826/)
+
+Auction house-specific configuration can be found under the `integrations` entry in the `config.yml`. You can blacklist certain wraps, or all physical/virtual wraps. More on the configuration in the [Wrap Settings](https://docs.hibiscusmc.com/hmcwraps/config/integrations) page.
+
+## Placeholders provided by HMCWraps
 Please replace `<uuid>` with a valid uuid of a wrap.
 
 - `%hmcwraps_mainhand%` - Returns the uuid of wrap in the current main hand
@@ -55,3 +66,6 @@ Please replace `<uuid>` with a valid uuid of a wrap.
 - `%hmcwraps_<uuid>_modelid%` - Returns the model id of the specified wrap
 - `%hmcwraps_<uuid>_color%` - Returns the hex color of the specified wrap
 - `%hmcwraps_<uuid>_type%` - Returns the item type (material) or the collection the specified wrap is in 
+- `%hmcwraps_<uuid>_hasperm%` - Returns the whether the player has the required permissions for the wrap
+- `%hmcwraps_mainhand_itemmodel%` - Returns the item model of the item in the main hand
+- `%hmcwraps_iswrapped%` - Returns a translatable message whether the item in main hand is wrapped

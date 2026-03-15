@@ -5,6 +5,10 @@ sidebar_position: 11
 # Wrap Settings
 You can configure how wrapping works in the `wrapping` section of the `config.yml`.
 
+`make-wrappers-unstackable` - This makes the physical wrappers unstackable. Only affects new wrappers.
+
+`give-wrapper-after-breaking` - Whether to return the physical wrapper to the player after the item with that wrap breaks.
+
 ### Rewrap
 Rewrapping is the process of wrapping an already wrapped item without unwrapping it first. Some may want this disabled.
 - `virtual-enabled` - If virtual rewrapping should be enabled.
@@ -14,10 +18,14 @@ As rewrapping also includes rewrapping a currently wrapped item with the same wr
 - `same-virtual-enabled` - If virtual rewrapping of the same wrap should be enabled.
 - `same-physical-enabled` - If physical rewrapping of the same wrap should be enabled. If enabled can cause loss of physical wrappers when `keep-after-unwrap` is set to false.
 
-## Example A
+## Example
 ```yaml
 # Settings related to wrapping
 wrapping:
+  # If wrappers and unwrappers should be unstackable, changing this will only affect newly given items
+  make-wrappers-unstackable: false
+  # If the physical wrapper should be given back after the item breaks with the wrap on it
+  give-wrapper-after-breaking: false
   # If wraps should be able to be rewrapped (wrapped again while wrapped)
   rewrap:
     # If rewrapping should be enabled for...

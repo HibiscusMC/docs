@@ -6,8 +6,6 @@ sidebar_position: 1
 
 HMCWraps has no dependencies. The plugin does have optional [hooks](https://docs.hibiscusmc.com/hmcwraps/hooks), which use other plugins, but you do not need anything else installed to use the plugin. 
 
-**NOTE**: If you are still running **ProtocolLib** 4.x.x or lower, please upgrade to 5.x.x as **HMCWraps** only works with the latest version. ProtocolLib should still work **100%**.
-
 ## Vanilla Resource Pack
 
 Add the resource pack to your server using server.properties

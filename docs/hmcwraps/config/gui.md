@@ -54,13 +54,14 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `rows` - How many rows the item should have
 - `target-item-slot` - Where the item the player was holding should be placed
 - `items` - All items and their slot
-- `shortcut` - Shortcut settings (disable the shortcut by setting `enabled` to `false`)
+- `shortcut` - Shortcut settings (disable the shortcut by setting `enabled` to `false`) (`FOOD` and `POTION` are valid exclusion materials as well)
 - `item-change-enabled` - If the player should be able to switch the wrapping item in the inventory.
 - `open-without-item-enabled` - If the player should be able to open the wraps inventory with the command while not holding any item.
 - `no-item-title` - This the title that shows when the option above is enabled and the player opens it while not holding an item. (This option is not included by default, but you can add it to your config)
 - `sort-order` - The order in which the wraps in the inventory will be sorted.
 - `actions` - Default actions on each wrap for which the player has permission 
 - `locked-actions` - Default actions for all wraps where the player doesn't have the right permissions
+- `show-all-without-item` - If all wraps should be displayed when no item is selected
 
 If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
 
@@ -93,31 +94,44 @@ If you want the item to show in both cases, you can just use the normal slot num
 
 ## Example
 ```yaml
-# The inventory in config.yml
+# The inventory (/wraps)
 inventory:
-  # Type of GUI, SCROLLING or PAGINATED
-  type: SCROLLING
-  # The title
-  title: <red><bold>Wraps
-  # How many rows the inventory should have
-  rows: 6
-  # The slot to set the item the player is holding to
-  target-item-slot: 49
+  # The sort order by which the wraps in the inventory will be sorted
+  # PERMISSION: Sorts by permission, the player has access to first
+  # SORT_ID: Sorts by the sort id, lower numbers first. Example: sort: 3
+  # MODEL_ID: Sorts by model id, lower numbers first
+  sort-order:
+    - 'PERMISSION'
+    - 'SORT_ID'
+    - 'MODEL_ID'
   # Shortcut settings
   shortcut:
     # If the shortcut to open the wrap inventory when shift & right-clicking should be enabled
     enabled: true
     # What items can't be used to open the inventory
-    exclude: 
-      - SHIELD
+    exclude:
+      - FOOD
+      - POTION
       - BOW
+      - ENDER_PEARL
   # If the player should be able to switch the wrapping item in the inventory.
   # When enabled, the inventory won't close after wrapping or unwrapping.
   item-change-enabled: true
   # If the player should be able to open the wraps inventory with the command while not holding any item.
   # The inventory won't be filled. If the option above is enabled, the player can then click the item to wrap.
   open-without-item-enabled: false
-  # Actions that should be run when the user clicks a wrap
+  # This goes hand-in-hand with the option above, if the inventory is opened without an item,
+  # instead of keeping it empty, it will populate the inventory with all wraps.
+  # If the player opens the inventory while holding an item (instead of empty hand), only wraps for that item will be shown.
+  # This also means that items that have no wrap will show an empty inventory.
+  show-all-without-item: false
+  # The title
+  title: '<red><bold>Wraps'
+  # Type of inventory, SCROLLING or PAGINATED
+  type: 'PAGINATED'
+  # How many rows the inventory should have
+  rows: 6
+  # Actions executed when clicking a wrap
   actions:
     left:
       WRAP:
@@ -130,6 +144,8 @@ inventory:
     right:
       PREVIEW:
         - ''
+  # The slot to set the item the player is holding to (-1 to disable)
+  target-item-slot: 49
   # The set items in the inventory, every empty slot will be filled with wraps
   items:
     # Slots start from 0
@@ -147,7 +163,7 @@ inventory:
       # The Bukkit material or hook
       id: 'GRAY_STAINED_GLASS_PANE'
       # The name
-      name: '<gray> '
+      name: ''
       # What slots it should fill
       fills:
         - 48

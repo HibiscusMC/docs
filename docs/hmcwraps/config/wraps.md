@@ -37,6 +37,7 @@ Adding wraps is an extremely simple task in HMCWraps. You can use all the option
 - `wrap-tooltip-style` - Namespaced key to set the tooltip style of the wrapped item
 - `wrap-lore-type` - If you don't want the wrap lore to overwrite the existing lore, you can either use `PREPEND` and `APPEND` to put the new lore either before or after the existing lore. Note that placeholders can't be used in the lore if this option is in use.
 - `use-original-mechanic` - When using Nexo, enabling this would cause HMCWraps to not change the Nexo ID of the item. This makes the wrapped item use the mechanics of the original item. If this is disabled, the mechanics of the wrap are used.
+- `revision` - Any arbitrary string denoting the current version or iteration of a particular wrap. The plugin will automatically repair all wraps that don't match their current configured revisions to update any changes made. If another change should propagate to all items currently in circulation, simply change the revision again. 
 - All other changes only affect the item shown in the inventory
 
 All options specific to wraps:
@@ -123,6 +124,8 @@ Ranges have the following criteria:
 
 `executable-items` - This checks for the ExecutableItems id if available.
 
+`mmo-items` - This checks for the MMOItems item id if available.
+
 #### Example
 
 ```yaml
@@ -166,6 +169,8 @@ You have two options when adding wraps: (You can also use the command!)
 **A**: In the config.yml, there is an entry called `items`, where you can add wraps.
 
 **B**: You can create **Wrap Files**, which are located in `plugins/HMCWraps/wraps/` and can be nested 10 folders deep.
+
+Please note that you will need to assign each wrap either a material, a collection (regular or simple format). The three examples below are assigning each wrap to only one material. You can replace that with a collection name like `SWORDS` or a simple collection like `'DIAMOND_SWORD, NETHERITE_SWORD'`. More information on the [collections](https://docs.hibiscusmc.com/hmcwraps/config/collections) page.
 
 Example A: `config.yml`
 ```yaml

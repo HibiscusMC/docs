@@ -21,6 +21,19 @@ SWORDS:
 
 `SWORDS` can now be used in [wraps](https://docs.hibiscusmc.com/hmcwraps/config/wraps).
 
+## Simplified Format
+If the collection won't be used in multiple, it can be easier to utilise the simple collections format. It replaces the spot where collections would usually sit in wrap configurations with a list of all materials. HMCWraps then automatically turns that into a new collection visible with `/wraps list`.
+
+Example Simple Format:
+```yml
+items:
+  'DIAMOND_SWORD, NETHERITE_SWORD, IRON_SWORD': # Simple collections format
+    wraps:
+      fire_sword: 
+        id: '1'
+        name: '<red>Fire Sword <gray>Wrap'
+```
+
 ## Applying
 Just like you can configure wraps in Wrap Files and the `config.yml`, you can configure collections in Collection Files 
 in the `pugins/HMCWraps/collections/` directory and the `config.yml`.

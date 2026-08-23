@@ -61,7 +61,7 @@ There are many actions registered that can be used:
 ### Inventory Specific Actions
 These actions only work when used in the inventory configuration.
 
-`SET_FAVORITE` - Set the clicked wrap as a favorite. Only possible on wrap actions.
+`SET_FAVORITE` - Set the clicked wrap as a favorite. Only possible on wrap actions. If the clicked wrap is already a favorite, it will unset that property. This action essentially serves as a toggle.
 
 `SCROLL_FORTH` or `NEXT_PAGE` - Go to the next page or scroll further
 - `''` - Yes, just put empty parentheses

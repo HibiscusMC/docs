@@ -9,6 +9,8 @@ You can configure how wrapping works in the `wrapping` section of the `config.ym
 
 `give-wrapper-after-breaking` - Whether to return the physical wrapper to the player after the item with that wrap breaks.
 
+`give-wrapper-after-death` - Whether to return all physical wrappers of wrapped items and the wrappers themselves to a player after they died.
+
 ### Rewrap
 Rewrapping is the process of wrapping an already wrapped item without unwrapping it first. Some may want this disabled.
 - `virtual-enabled` - If virtual rewrapping should be enabled.

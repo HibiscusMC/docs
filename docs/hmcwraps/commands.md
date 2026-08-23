@@ -23,9 +23,17 @@ sidebar_position: 2
 `/wraps create <file> <wrap uuid> [collection]` - Create a new wrap in the specified file from the item you're holding
 with the specified UUID. Existing files will be appended.
 
-`/wraps open <player>` - Open the wraps inventory for another player.
+`/wraps open <player> [category]` - Open the wraps inventory for another player. When the target player is not holding an item, and `open-without-item-enabled` and `show-all-without-item` are enabled, and a valid category or material is set, the inventory will show all wraps in that category instead of all wraps.
 
 `/wraps drop <wrap uuid> <x> <y> <z> <world> [amount]`
+
+`/wraps repair` - Unwraps and then rewraps the currently held wrapped item.
+
+`/wraps permission export` - Creates a new file in the `HMCWraps` directory that contains all wrap permissions (permissions for owning or wrapping a certain wrap) and who owns them. This can be imported on another server. Only LuckPerms is currently supported.
+
+`/wraps permission import <file>` - Import the file from the export command above. Only LuckPerms is currently supported. An imported file can't be imported twice. Revert before importing again.
+
+`/wraps permission revert <file>` - Revert the changes caused by the import command. This will only revert assignments that were actually changed during the import. Players that already had those permissions will keep them after the revert.
 
 `/wraps list` - List all currently loaded wraps and collections
 

@@ -24,6 +24,8 @@ There are 5 possible ways to exclude:
 
 `executable-items` - Any ExecutableItems id in this list will not be able to be wrapped.
 
+`mmo-items` - Any MMOItems id in this list will not be able to be wrapped.
+
 ## Example
 ```yaml
 # Items with these properties can't be wrapped

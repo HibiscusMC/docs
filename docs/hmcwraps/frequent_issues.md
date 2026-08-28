@@ -164,7 +164,3 @@ SWORDS:
       id: 'itemsadder:hmcwraps:fire_sword'
       (other configuration)
 ```
-
-### Crucible
-
-As we don't provide a Crucible configuration, we don't have any examples here. It should be fairly similar though.

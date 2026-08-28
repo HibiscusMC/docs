@@ -60,12 +60,15 @@ Auction house-specific configuration can be found under the `integrations` entry
 ## Placeholders provided by HMCWraps
 Please replace `<uuid>` with a valid uuid of a wrap.
 
-- `%hmcwraps_mainhand%` - Returns the uuid of wrap in the current main hand
+- `%hmcwraps_mainhand%` - Returns the uuid of the wrap in the current main hand
 - `%hmcwraps_filter%` - Returns a translatable message if the filter is active
-- `%hmcwraps_<uuid>_equipped%` - Returns a translatable message if the specified wrap is currently on the item the player is wrapping with the virtual menu
-- `%hmcwraps_<uuid>_modelid%` - Returns the model id of the specified wrap
-- `%hmcwraps_<uuid>_color%` - Returns the hex color of the specified wrap
-- `%hmcwraps_<uuid>_type%` - Returns the item type (material) or the collection the specified wrap is in 
-- `%hmcwraps_<uuid>_hasperm%` - Returns the whether the player has the required permissions for the wrap
 - `%hmcwraps_mainhand_itemmodel%` - Returns the item model of the item in the main hand
-- `%hmcwraps_iswrapped%` - Returns a translatable message whether the item in main hand is wrapped
+- `%hmcwraps_iswrapped%` - Returns a translatable message whether the item in the main hand is wrapped
+- `%hmcwraps_equipped_<uuid>%` - Returns a translatable message if the specified wrap is currently on the item the player is wrapping with in the virtual menu
+- `%hmcwraps_modelid_<uuid>%` - Returns the model id of the specified wrap
+- `%hmcwraps_color_<uuid>%` - Returns the hex color of the specified wrap
+- `%hmcwraps_type_<uuid>%` - Returns the item type (material) or collection the specified wrap is in
+- `%hmcwraps_hasperm_<uuid>%` - Returns whether the player has the required permissions for the wrap
+- `%hmcwraps_favorite_<uuid>%` - Returns a translatable message if the specified wrap is a favorite of the player
+
+Should the provided UUID not be a valid wrap UUID, the message under the key `placeholder.invalid-wrap` in `messages.properties` will be returned instead.

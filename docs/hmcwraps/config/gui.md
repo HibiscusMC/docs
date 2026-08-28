@@ -61,7 +61,9 @@ In the `inventory` entry in the `config.yml`, there are the following configurat
 - `sort-order` - The order in which the wraps in the inventory will be sorted.
 - `actions` - Default actions on each wrap for which the player has permission 
 - `locked-actions` - Default actions for all wraps where the player doesn't have the right permissions
-- `show-all-without-item` - If all wraps should be displayed when no item is selected
+- `show-all-without-item` - Whether all wraps should be displayed when no item is selected
+- `favorite-prefix` - The prefix to be prepended to favorite wraps in the wrap inventory. Empty by default.
+- `treat-as-no-item` - Which materials should be treated as if the player isn't holding any item
 
 If you want to disable the shift-click shortcut for only one player, give them the permission `hmcwraps.shortcut.disable`.
 
@@ -71,6 +73,7 @@ You can define a specific sorting order in which the wraps in the GUI are sorted
 ```yaml
   # The sort order by which the wraps in the inventory will be sorted
   sort-order:
+    - 'FAVORITE' # Sorts by favorite wraps, favorites first
     - 'PERMISSION' # The items the player has access to will be shown first
     - 'SORT_ID' # You can define a sort id on a wrap, lower numbers will be shown first. Example: 'sort: 3'
     - 'MODEL_ID' # Sorted by model id, lower numbers will be shown first
@@ -97,10 +100,12 @@ If you want the item to show in both cases, you can just use the normal slot num
 # The inventory (/wraps)
 inventory:
   # The sort order by which the wraps in the inventory will be sorted
+  # FAVORITE: Sorts by favorite wraps, favorites first
   # PERMISSION: Sorts by permission, the player has access to first
   # SORT_ID: Sorts by the sort id, lower numbers first. Example: sort: 3
   # MODEL_ID: Sorts by model id, lower numbers first
   sort-order:
+    - 'FAVORITE'
     - 'PERMISSION'
     - 'SORT_ID'
     - 'MODEL_ID'
@@ -125,6 +130,14 @@ inventory:
   # If the player opens the inventory while holding an item (instead of empty hand), only wraps for that item will be shown.
   # This also means that items that have no wrap will show an empty inventory.
   show-all-without-item: false
+  # Which materials should be treated as if the player isn't holding any item.
+  # For example, add your menu item and enable the option above to show all wraps when opening the inventory
+  # while holding the menu item through the /wraps command.
+  treat-as-no-item:
+    - BARRIER
+  # The prefix to be shown in the GUI on wraps marked as favorite
+  # Leave empty to disable
+  favorite-prefix: ''
   # The title
   title: '<red><bold>Wraps'
   # Type of inventory, SCROLLING or PAGINATED

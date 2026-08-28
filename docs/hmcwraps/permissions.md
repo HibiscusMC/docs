@@ -8,7 +8,7 @@ HMCWraps has a fairly simple permission system. Each command has its own permiss
 ## Groups
 `hmcwraps.admin` - Access to all commands
 
-`hmcwraps.management` - Access to all commands except convert and reload
+`hmcwraps.management` - Access to all commands except convert and reload and other destructive commands
 
 `hmcwraps.commands.physical` - Access all commands related to physical wraps
 
@@ -70,5 +70,15 @@ HMCWraps has a fairly simple permission system. Each command has its own permiss
 
 `hmcwraps.shortcut.disable` - If this permission is applied to a player, the shortcut function is disabled only for that player.
 
-`hmcwraps.commands.open` - Gives access to the drop command
+`hmcwraps.commands.drop` - Gives access to the drop command
 - Admin
+
+`hmcwraps.commands.permission` - Gives access to exporting, importing, and reverting permissions.
+- Admin
+
+`hmcwraps.commands.repair` - Gives access to the repair command
+- Admin
+- Management
+- Virtual
+
+`hmcwraps.commands.repair.self` - Gives access to repair an item using commands (virtual). The player can only repair his own tools, not the tools from others.
